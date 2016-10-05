@@ -89,7 +89,181 @@
   "nearestAirport": "string",
   "lastUpdatedDateFrom": "2016-10-05T05:21:15.539Z",
   "lastUpdatedDateTo": "2016-10-05T05:21:15.539Z"
-}</con:request><con:originalUri>http://qa.dtci.dotrips.com/api/v1/city</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="17e01b80-4758-43ce-8f71-3b37e14e3467" name="DoTripsCommon"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="8d506504-71b5-4f80-a182-4df947aee7c8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetPolicy" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="31213f2d-0d10-488d-930b-c90e68083795" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="List City for auto complete widget" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="List City for auto complete widget - List City for auto complete widget" id="8734eda1-3a0b-41d0-b0f0-a919a67569f3"><con:settings/><con:config service="http://dev-dtci-dotrips.qa6.tothenew.net" resourcePath="/api/v1/city/autoComplete" methodName="List City for auto complete widget" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="List City for auto complete widget - List City for auto complete widget" id="560e5844-8e3d-4f27-a6c4-5f0523ac2f09" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+}</con:request><con:originalUri>http://qa.dtci.dotrips.com/api/v1/city</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="de3f31b3-c18b-4cd7-b4b2-9b2c90d2fbf9" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtci.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://qa.dtci.dotrips.com</con:endpoint></con:endpoints><con:resource name="resetPasswordLink" path="/api/v1/createResetPasswordToken" id="439c820d-596a-4d7c-8550-2feeb434cc98"><con:settings/><con:parameters><con:parameter><con:name>emailId</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="resetPasswordLink" id="35011c55-f41e-4d45-a6e3-e3730752cbc0" method="PUT"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:cre="http://qa.dtci.dotrips.com/api/v1/createRegistrationToken">cre:Response</con:element></con:representation><con:request name="resetPasswordLink" id="e2a5d8ca-65f3-40b6-9b6f-8bfbdb466600" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtci.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtci.dotrips.com/api/v1/createRegistrationToken</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="emailId" value="kaushal.jha@tothenew.com" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>emailId</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="f0bf2330-7f88-4712-89e8-b140369cec60" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtci.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://qa.dtci.dotrips.com</con:endpoint></con:endpoints><con:resource name="CustomerList" path="/api/v1/customer" id="76159823-f5bd-4401-b8f3-663bad389725"><con:settings/><con:parameters/><con:method name="CustomerList" id="f18601dd-2fa0-4123-8811-8a8d561035bd" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:cus="http://qa.dtci.dotrips.com/api/v1/customer">cus:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="customerList" id="9bcbf3f9-03b6-4201-b1ad-76ee908bf317" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtci.dotrips.com</con:endpoint><con:request>{
+  "sortColumn": "string",
+  "order": "string",
+  "max": 0,
+  "offset": 0,
+  "pageIndex": 0,
+  "importCsvMode": false,
+  "isPaginate": false,
+  "id": "string",
+  "username": "string",
+  "emailId": "string",
+  "password": "string",
+  "title": "MR",
+  "firstName": "string",
+  "middleName": "string",
+  "lastName": "string",
+  "socialId": "string",
+  "salesChannel": "string",
+  "salesChannelId": 0,
+  "dateOfBirth": "2016-10-05T05:21:15.683Z",
+  "epochDateOfBirth": "string",
+  "maritalStatus": "SINGLE",
+  "isdCode": "string",
+  "phoneNumber": "string",
+  "address": {
+    "id": 0,
+    "addressType": "OFFICE",
+    "pincode": "string",
+    "addressLine": "string",
+    "locality": "string",
+    "localityName": "string",
+    "city": "string",
+    "cityName": "string",
+    "province": "string",
+    "provinceName": "string",
+    "country": "string",
+    "countryName": "string",
+    "region": "string",
+    "regionName": "string",
+    "countryId": 0
+  },
+  "phone": {
+    "type": "string",
+    "isdCode": "string",
+    "areaCode": "string",
+    "phoneNumber": "string"
+  },
+  "addressLine": "string",
+  "city": "string",
+  "province": "string",
+  "areaCode": "string",
+  "countryName": "string",
+  "countryId": 0,
+  "pincode": "string",
+  "addressType": "OFFICE",
+  "isBookingAllowed": false,
+  "emailPreference": false,
+  "callPreference": false,
+  "isDeleted": false,
+  "isNewsletterSubscribed": false,
+  "communicationLanguage": "string",
+  "createdBy": "string",
+  "registrationApp": false,
+  "customerRegistrationApp": "YES",
+  "registrationType": "DOTRIPS",
+  "createdDate": "2016-10-05T05:21:15.683Z",
+  "isActivated": false,
+  "lastLogin": "2016-10-05T05:21:15.683Z",
+  "isMobileCustomer": false,
+  "lastUpdatedBy": "string",
+  "lastActivatedDate": "2016-10-05T05:21:15.683Z",
+  "lastDeactivatedDate": "2016-10-05T05:21:15.683Z",
+  "lastActivatedByDtmcUser": "string",
+  "lastDeactivatedByDtmcUser": "string",
+  "registrationDateFrom": "2016-10-05T05:21:15.684Z",
+  "registrationDateTo": "2016-10-05T05:21:15.684Z",
+  "lastLoginFrom": "2016-10-05T05:21:15.684Z",
+  "lastLoginTo": "2016-10-05T05:21:15.684Z",
+  "source": "string",
+  "campaign": "string",
+  "country": "string",
+  "profileImage": "string",
+  "lastPassword": "string",
+  "autoShare": false,
+  "accountExpired": false,
+  "accountLocked": false,
+  "passwordExpired": false,
+  "customerResetToken": "string",
+  "tripPreferences": [
+    0
+  ],
+  "errors": {
+    "nestedPath": "string",
+    "allErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalErrorCount": 0,
+    "globalErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "code": "string"
+    },
+    "fieldErrorCount": 0,
+    "fieldErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      }
+    ],
+    "fieldError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "field": "string",
+      "rejectedValue": {},
+      "bindingFailure": false,
+      "code": "string"
+    },
+    "objectName": "string",
+    "errorCount": 0
+  }
+}</con:request><con:originalUri>http://qa.dtci.dotrips.com/api/v1/customer</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="ac15e964-5971-4ae1-a3e6-640fa2361658" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtci.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://qa.dtci.dotrips.com</con:endpoint></con:endpoints><con:resource name="customerSalesChannels" path="/api/v1/customer/salesChannels" id="50d1fd71-cc49-420f-a925-e777c5f61ad3"><con:settings/><con:parameters/><con:method name="customerSalesChannels" id="594d9153-0974-460f-ba95-f0e7cdd38d6c" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:cus="http://qa.dtci.dotrips.com/api/v1/customer">cus:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:cus="http://qa.dtci.dotrips.com/api/v1/customer">cus:Fault</con:element></con:representation><con:request name="customerSalesChannelsList" id="523b1945-4818-46df-af64-078bd69a63f1" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtci.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtci.dotrips.com/api/v1/customer</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="17e01b80-4758-43ce-8f71-3b37e14e3467" name="DoTripsCommon"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="8d506504-71b5-4f80-a182-4df947aee7c8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetPolicy" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="31213f2d-0d10-488d-930b-c90e68083795" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="List City for auto complete widget" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="List City for auto complete widget - List City for auto complete widget" id="8734eda1-3a0b-41d0-b0f0-a919a67569f3"><con:settings/><con:config service="http://dev-dtci-dotrips.qa6.tothenew.net" resourcePath="/api/v1/city/autoComplete" methodName="List City for auto complete widget" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="List City for auto complete widget - List City for auto complete widget" id="560e5844-8e3d-4f27-a6c4-5f0523ac2f09" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="Accept-Language" value="en"/>
   &lt;con:entry key="applicationType" value="web"/>
 &lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://dev-dtci-dotrips.qa6.tothenew.net</con:endpoint><con:request/><con:originalUri>http://dev-dtci-dotrips.qa6.tothenew.net/api/v1/city/autoComplete</con:originalUri><con:assertion type="GroovyScriptAssertion" id="eb988199-05fd-4292-94db-6a89a0fcc2e9" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper 
@@ -266,4 +440,214 @@ def Country=CountryID.find{
 	it==3
 }
 assert Country==3
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="2f9d1b60-85ef-428a-b337-c809af560c86" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="resetPasswordLink" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="resetPasswordLink - resetPasswordLink" id="3d93e3ea-9755-48eb-ac8e-ad49f5bfb6bb"><con:settings/><con:config service="http://qa.dtci.dotrips.com" resourcePath="/api/v1/createResetPasswordToken" methodName="resetPasswordLink" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="resetPasswordLink - resetPasswordLink" id="e2a5d8ca-65f3-40b6-9b6f-8bfbdb466600" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtci.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtci.dotrips.com/api/v1/createRegistrationToken</con:originalUri><con:assertion type="Simple Contains" id="bc6081f7-fa60-4a5a-b03b-eb6d610a1b12" name="Contains"><con:configuration><token>Reset Password link been successfully sent to your registered email address. Please check your inbox for further instructions.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="emailId" value="kaushal.jha@tothenew.com" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>emailId</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="9abcdb98-f216-4b65-934d-5ec4fd1d9e42" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="customerList" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="CustomerList - customerList" id="244f279a-7738-4d14-85e8-40789756dae3"><con:settings/><con:config service="http://qa.dtci.dotrips.com" resourcePath="/api/v1/customer" methodName="CustomerList" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CustomerList - customerList" id="9bcbf3f9-03b6-4201-b1ad-76ee908bf317" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtci.dotrips.com</con:endpoint><con:request>{
+  "sortColumn": "string",
+  "order": "string",
+  "max": 0,
+  "offset": 0,
+  "pageIndex": 0,
+  "importCsvMode": false,
+  "isPaginate": false,
+  "id": "string",
+  "username": "string",
+  "emailId": "string",
+  "password": "string",
+  "title": "MR",
+  "firstName": "string",
+  "middleName": "string",
+  "lastName": "string",
+  "socialId": "string",
+  "salesChannel": "string",
+  "salesChannelId": 0,
+  "dateOfBirth": "2016-10-05T05:21:15.683Z",
+  "epochDateOfBirth": "string",
+  "maritalStatus": "SINGLE",
+  "isdCode": "string",
+  "phoneNumber": "string",
+  "address": {
+    "id": 0,
+    "addressType": "OFFICE",
+    "pincode": "string",
+    "addressLine": "string",
+    "locality": "string",
+    "localityName": "string",
+    "city": "string",
+    "cityName": "string",
+    "province": "string",
+    "provinceName": "string",
+    "country": "string",
+    "countryName": "string",
+    "region": "string",
+    "regionName": "string",
+    "countryId": 0
+  },
+  "phone": {
+    "type": "string",
+    "isdCode": "string",
+    "areaCode": "string",
+    "phoneNumber": "string"
+  },
+  "addressLine": "string",
+  "city": "string",
+  "province": "string",
+  "areaCode": "string",
+  "countryName": "string",
+  "countryId": 0,
+  "pincode": "string",
+  "addressType": "OFFICE",
+  "isBookingAllowed": false,
+  "emailPreference": false,
+  "callPreference": false,
+  "isDeleted": false,
+  "isNewsletterSubscribed": false,
+  "communicationLanguage": "string",
+  "createdBy": "string",
+  "registrationApp": false,
+  "customerRegistrationApp": "YES",
+  "registrationType": "DOTRIPS",
+  "createdDate": "2016-10-05T05:21:15.683Z",
+  "isActivated": false,
+  "lastLogin": "2016-10-05T05:21:15.683Z",
+  "isMobileCustomer": false,
+  "lastUpdatedBy": "string",
+  "lastActivatedDate": "2016-10-05T05:21:15.683Z",
+  "lastDeactivatedDate": "2016-10-05T05:21:15.683Z",
+  "lastActivatedByDtmcUser": "string",
+  "lastDeactivatedByDtmcUser": "string",
+  "registrationDateFrom": "2016-10-05T05:21:15.684Z",
+  "registrationDateTo": "2016-10-05T05:21:15.684Z",
+  "lastLoginFrom": "2016-10-05T05:21:15.684Z",
+  "lastLoginTo": "2016-10-05T05:21:15.684Z",
+  "source": "string",
+  "campaign": "string",
+  "country": "string",
+  "profileImage": "string",
+  "lastPassword": "string",
+  "autoShare": false,
+  "accountExpired": false,
+  "accountLocked": false,
+  "passwordExpired": false,
+  "customerResetToken": "string",
+  "tripPreferences": [
+    0
+  ],
+  "errors": {
+    "nestedPath": "string",
+    "allErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalErrorCount": 0,
+    "globalErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "code": "string"
+    },
+    "fieldErrorCount": 0,
+    "fieldErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      }
+    ],
+    "fieldError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "field": "string",
+      "rejectedValue": {},
+      "bindingFailure": false,
+      "code": "string"
+    },
+    "objectName": "string",
+    "errorCount": 0
+  }
+}</con:request><con:originalUri>http://qa.dtci.dotrips.com/api/v1/customer</con:originalUri><con:assertion type="GroovyScriptAssertion" id="6a378b4e-fae0-429c-98bc-2ba519576c65" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper 
+
+def responseContent = messageExchange.getResponseContent() 
+
+log.info responseContent
+
+def slurper = new JsonSlurper()
+def json = slurper.parseText responseContent
+
+log.info json.customers*.emailId
+
+def emailList = json.customers.emailId
+log.info emailList.getClass()
+def id=emailList.find{
+	it=="kaushal.jha@tothenew.com"
+}
+log.info id
+assert id=="kaushal.jha@tothenew.com"
+
+
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="0b2f5b54-48a9-4dd7-832c-0a07cc09557c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="customerSalesChannelsList" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="customerSalesChannels - customerSalesChannelsList" id="87c98c12-0bfb-4606-bc8a-e1a3c8d9c11e"><con:settings/><con:config service="http://qa.dtci.dotrips.com" resourcePath="/api/v1/customer/salesChannels" methodName="customerSalesChannels" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="customerSalesChannels - customerSalesChannelsList" id="523b1945-4818-46df-af64-078bd69a63f1" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtci.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtci.dotrips.com/api/v1/customer</con:originalUri><con:assertion type="GroovyScriptAssertion" id="e5dbf135-611b-43d2-90d3-886130210a51" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper 
+
+def responseContent = messageExchange.getResponseContent() 
+
+log.info responseContent
+
+def slurper = new JsonSlurper()
+def json = slurper.parseText responseContent
+
+def salesChannelID=json.id
+log.info salesChannelID.getClass()
+def ID=salesChannelID.find{
+	it==1
+}
+log.info ID
+assert ID==1
 </scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
