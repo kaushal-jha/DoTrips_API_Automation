@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="ae15107b-23dd-4467-bf6d-928711fafab5" activeEnvironment="Default" name="DoTrips Common" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="83e3bb91-0c0c-4e32-8be7-250540654ce1" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtei.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint></con:endpoints><con:resource name="1" path="/api/v1/locality/search" id="ea338921-9521-4641-871c-714bd401f2fa"><con:settings/><con:parameters><con:parameter><con:name>body</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="1" id="5a1f0f37-118e-4f26-8fcc-3e79556113cb" method="GET"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:ns="http://qa.dtei.dotrips.com/api/v1/experience/policy/getAllowedGuestEligiblities/1">ns:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://qa.dtei.dotrips.com/api/v1/experience/policy/getAllowedGuestEligiblities/1">ns:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="REQUEST"><con:mediaType>application/x-www-form-urlencoded</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="2ad680a3-538f-4bc5-b247-3f46a830cc1a" mediaType="application/x-www-form-urlencoded" postQueryString="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtei.dotrips.com/api/v1/experience/policy/getAllowedGuestEligiblities/1</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="body" value="Delhi" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>body</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="0316a2aa-7d6c-4f01-a69d-80b8457ce2e6" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://dev-dtci-dotrips.qa6.tothenew.net" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://dev-dtci-dotrips.qa6.tothenew.net</con:endpoint></con:endpoints><con:resource name="List City for auto complete widget" path="/api/v1/city/autoComplete" id="15377466-d9c3-4040-a594-9c8f091b98a6"><con:settings/><con:parameters/><con:method name="List City for auto complete widget" id="ebbab391-6e21-4868-872d-424716dec212" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=iso-8859-1</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="List City for auto complete widget" id="560e5844-8e3d-4f27-a6c4-5f0523ac2f09" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://dev-dtci-dotrips.qa6.tothenew.net</con:endpoint><con:request/><con:originalUri>http://dev-dtci-dotrips.qa6.tothenew.net/api/v1/city/autoComplete</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="59d7554b-b686-4227-bfe7-c25e0c964954" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://dev-dtci-dotrips.qa6.tothenew.net" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://dev-dtci-dotrips.qa6.tothenew.net</con:endpoint></con:endpoints><con:resource name="cityDetails" path="/api/v1/city/1" id="d24cfe21-b1d8-4a63-8598-1ffd0dc8b3cf"><con:settings/><con:parameters/><con:method name="cityDetails" id="7b43d12b-ded6-4197-ba14-f9193dfc72dc" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://dev-dtci-dotrips.qa6.tothenew.net/api/v1/city/1">ns:Response</con:element></con:representation><con:request name="cityDetails" id="2b7d419e-56cb-4274-896f-5b45994753f0" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://dev-dtci-dotrips.qa6.tothenew.net</con:endpoint><con:request/><con:originalUri>http://dev-dtci-dotrips.qa6.tothenew.net/api/v1/city/1</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="ed602dbb-b936-4a92-bf8a-f2c9b7379cb3" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://dev-dtci-dotrips.qa6.tothenew.net" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://dev-dtci-dotrips.qa6.tothenew.net</con:endpoint></con:endpoints><con:resource name="List Country for auto complete widget" path="/api/v1/country/autoComplete" id="fac2970d-e334-419d-899d-f1b64ed6bdab"><con:settings/><con:parameters><con:parameter><con:name>regionId</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="List Country for auto complete widget" id="7601ed1d-9a0b-4f27-959f-0b94c94cb8c9" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="List Country for auto complete widget" id="d9cc08c1-e7d3-415e-afb7-533880d10123" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://dev-dtci-dotrips.qa6.tothenew.net</con:endpoint><con:request/><con:originalUri>http://dev-dtci-dotrips.qa6.tothenew.net/api/v1/country/autoComplete</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="regionId" value="1" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>regionId</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="3304d0a3-9c89-4e88-8d62-a78ba0d7563c" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://dev-dtci-dotrips.qa6.tothenew.net" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://dev-dtci-dotrips.qa6.tothenew.net</con:endpoint></con:endpoints><con:resource name="deleteCountry" path="/api/v1/country" id="127d402e-47e3-42dc-badd-dcf572529ad0"><con:settings/><con:parameters/><con:method name="deleteCountry" id="41e12192-cd20-4788-af74-db38b3337402" method="DELETE"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:coun="http://dev-dtci-dotrips.qa6.tothenew.net/api/v1/country">coun:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="REQUEST"><con:mediaType>application/x-www-form-urlencoded</con:mediaType><con:params/></con:representation><con:request name="deleteCountry" id="4fe464d9-0123-4e24-9780-5872de26e902" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://dev-dtci-dotrips.qa6.tothenew.net</con:endpoint><con:request>{
+  "sortColumn": "string",
+  "order": "string",
+  "max": 0,
+  "offset": 0,
+  "pageIndex": 0,
+  "importCsvMode": false,
+  "id": 1,
+  "name": "string",
+  "displayName": {
+    "languageMappings": {}
+  },
+  "code": "string",
+  "isdCode": "string",
+  "regionId": 0,
+  "regionName": "string",
+  "lastUpdatedBy": "string",
+  "lastUpdatedDate": "2016-10-04T04:50:26.795Z",
+  "lastUpdatedDateFrom": "2016-10-04T04:50:26.795Z",
+  "lastUpdatedDateTo": "2016-10-04T04:50:26.795Z",
+  "createdBy": "string",
+  "createdDate": "2016-10-04T04:50:26.795Z"
+}</con:request><con:originalUri>http://dev-dtci-dotrips.qa6.tothenew.net/api/v1/country</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="c73c245a-4a83-4b71-85c7-bb7ebfe65c41" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://dev-dtci-dotrips.qa6.tothenew.net" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://dev-dtci-dotrips.qa6.tothenew.net</con:endpoint></con:endpoints><con:resource name="searchCountry" path="/api/v1/country/search" id="89a647d4-24b1-4986-b0bb-8ebc0dcc9d4e"><con:settings/><con:parameters/><con:method name="searchCountry" id="5f6769c7-f723-4fcd-8019-0e5d5125fa0b" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:sear="http://dev-dtci-dotrips.qa6.tothenew.net/api/v1/country/search">sear:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="searchCountry" id="2fcf2d5d-cb96-4bbc-943a-b3f599f0d10e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://dev-dtci-dotrips.qa6.tothenew.net</con:endpoint><con:request>{
+  "sortColumn": "string",
+  "order": "string",
+  "max": 0,
+  "offset": 0,
+  "pageIndex": 0,
+  "importCsvMode": false,
+  "id": 1,
+  "name": "string",
+  "displayName": {
+    "languageMappings": {}
+  },
+  "code": "string",
+  "isdCode": "string",
+  "regionId": 0,
+  "regionName": "string",
+  "lastUpdatedBy": "string",
+  "lastUpdatedDate": "2016-10-04T04:50:26.872Z",
+  "lastUpdatedDateFrom": "2016-10-04T04:50:26.872Z",
+  "lastUpdatedDateTo": "2016-10-04T04:50:26.872Z",
+  "createdBy": "string",
+  "createdDate": "2016-10-04T04:50:26.872Z"
+}</con:request><con:originalUri>http://dev-dtci-dotrips.qa6.tothenew.net/api/v1/country/search</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource></con:interface><con:testSuite id="17e01b80-4758-43ce-8f71-3b37e14e3467" name="DoTripsCommon"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="8d506504-71b5-4f80-a182-4df947aee7c8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetPolicy" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="31213f2d-0d10-488d-930b-c90e68083795" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="List City for auto complete widget" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="List City for auto complete widget - List City for auto complete widget" id="8734eda1-3a0b-41d0-b0f0-a919a67569f3"><con:settings/><con:config service="http://dev-dtci-dotrips.qa6.tothenew.net" resourcePath="/api/v1/city/autoComplete" methodName="List City for auto complete widget" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="List City for auto complete widget - List City for auto complete widget" id="560e5844-8e3d-4f27-a6c4-5f0523ac2f09" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://dev-dtci-dotrips.qa6.tothenew.net</con:endpoint><con:request/><con:originalUri>http://dev-dtci-dotrips.qa6.tothenew.net/api/v1/city/autoComplete</con:originalUri><con:assertion type="GroovyScriptAssertion" id="eb988199-05fd-4292-94db-6a89a0fcc2e9" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper 
+
+def responseContent = messageExchange.getResponseContent() 
+
+log.info responseContent
+
+def slurper = new JsonSlurper()
+def json = slurper.parseText responseContent
+def id= json.id
+log.info id.getClass()
+def a=id.find{
+	it==1
+}
+
+log.info a
+
+assert a==1</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="72ac5fc2-0c61-4a84-ae65-37038f76fb97" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="cityDetails" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="cityDetails - cityDetails" id="4cc8e5bc-059a-4450-860f-6fe07780cf2d"><con:settings/><con:config service="http://dev-dtci-dotrips.qa6.tothenew.net" resourcePath="/api/v1/city/1" methodName="cityDetails" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="cityDetails - cityDetails" id="2b7d419e-56cb-4274-896f-5b45994753f0" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://dev-dtci-dotrips.qa6.tothenew.net</con:endpoint><con:request/><con:originalUri>http://dev-dtci-dotrips.qa6.tothenew.net/api/v1/city/1</con:originalUri><con:assertion type="GroovyScriptAssertion" id="e00e6dee-d5b7-42b6-bddf-458f54cb4c7a" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper 
+
+def responseContent = messageExchange.getResponseContent() 
+
+log.info responseContent
+
+def slurper = new JsonSlurper()
+def json = slurper.parseText responseContent
+
+log.info json.city.countryName
+
+assert json.city.countryName.equals("UAE")
+
+log.info json.city.areaPhoneCode
+assert json.city.areaPhoneCode.equals("654")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="1fc57271-97c0-4f53-bb64-aa750ff4091c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="List Country for Auto Complete" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="List Country for auto complete widget - List Country for auto complete widget" id="494a5b54-53ec-4968-b2c8-43310666fdf0"><con:settings/><con:config service="http://dev-dtci-dotrips.qa6.tothenew.net" resourcePath="/api/v1/country/autoComplete" methodName="List Country for auto complete widget" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="List Country for auto complete widget - List Country for auto complete widget" id="d9cc08c1-e7d3-415e-afb7-533880d10123" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://dev-dtci-dotrips.qa6.tothenew.net</con:endpoint><con:request/><con:originalUri>http://dev-dtci-dotrips.qa6.tothenew.net/api/v1/country/autoComplete</con:originalUri><con:assertion type="GroovyScriptAssertion" id="28a3e418-9e41-4853-9e04-b61df4ecbafb" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper 
+
+def responseContent = messageExchange.getResponseContent() 
+
+log.info responseContent
+
+def slurper = new JsonSlurper()
+def json = slurper.parseText responseContent
+def id= json.id
+log.info id.getClass()
+def a=id.find{
+	it==1
+}
+
+log.info a
+
+assert a==1</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="regionId" value="1" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>regionId</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="21842e8e-51d7-4236-8463-feea1880009f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="deleteCountry" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="deleteCountry - deleteCountry" id="7d3871a3-41fe-4603-9215-f12918b38517"><con:settings/><con:config service="http://dev-dtci-dotrips.qa6.tothenew.net" resourcePath="/api/v1/country" methodName="deleteCountry" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="deleteCountry - deleteCountry" id="4fe464d9-0123-4e24-9780-5872de26e902" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://dev-dtci-dotrips.qa6.tothenew.net</con:endpoint><con:request>{
+  "sortColumn": "string",
+  "order": "string",
+  "max": 0,
+  "offset": 0,
+  "pageIndex": 0,
+  "importCsvMode": false,
+  "id": 1,
+  "name": "string",
+  "displayName": {
+    "languageMappings": {}
+  },
+  "code": "string",
+  "isdCode": "string",
+  "regionId": 0,
+  "regionName": "string",
+  "lastUpdatedBy": "string",
+  "lastUpdatedDate": "2016-10-04T04:50:26.795Z",
+  "lastUpdatedDateFrom": "2016-10-04T04:50:26.795Z",
+  "lastUpdatedDateTo": "2016-10-04T04:50:26.795Z",
+  "createdBy": "string",
+  "createdDate": "2016-10-04T04:50:26.795Z"
+}</con:request><con:originalUri>http://dev-dtci-dotrips.qa6.tothenew.net/api/v1/country</con:originalUri><con:assertion type="Simple Contains" id="1accfdd4-937a-425c-b3b1-80b28503bead" name="Contains"><con:configuration><token>Cannot delete Country as there are active Provinces associated with this Country</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="ce62f350-5d62-4ad7-8567-67cad4e8db8b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="searchCountry" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="searchCountry - searchCountry" id="2d9c6267-3496-41f2-933c-54f1a11b534e"><con:settings/><con:config service="http://dev-dtci-dotrips.qa6.tothenew.net" resourcePath="/api/v1/country/search" methodName="searchCountry" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="searchCountry - searchCountry" id="2fcf2d5d-cb96-4bbc-943a-b3f599f0d10e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://dev-dtci-dotrips.qa6.tothenew.net</con:endpoint><con:request>{
+  "sortColumn": "string",
+  "order": "string",
+  "max": 0,
+  "offset": 0,
+  "pageIndex": 0,
+  "importCsvMode": false,
+  "id": 1,
+  "name": "string",
+  "displayName": {
+    "languageMappings": {}
+  },
+  "code": "string",
+  "isdCode": "string",
+  "regionId": 0,
+  "regionName": "string",
+  "lastUpdatedBy": "string",
+  "lastUpdatedDate": "2016-10-04T04:50:26.872Z",
+  "lastUpdatedDateFrom": "2016-10-04T04:50:26.872Z",
+  "lastUpdatedDateTo": "2016-10-04T04:50:26.872Z",
+  "createdBy": "string",
+  "createdDate": "2016-10-04T04:50:26.872Z"
+}</con:request><con:originalUri>http://dev-dtci-dotrips.qa6.tothenew.net/api/v1/country/search</con:originalUri><con:assertion type="GroovyScriptAssertion" id="bf703f67-6a5c-4886-a5bd-43777f4f3037" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper 
+
+def responseContent = messageExchange.getResponseContent() 
+
+log.info responseContent
+
+def slurper = new JsonSlurper()
+def json = slurper.parseText responseContent
+
+log.info json.country.id
+
+assert json.country.id.equals(1)
+
+log.info json.country.name
+
+assert json.country.name.equals("UAE")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
