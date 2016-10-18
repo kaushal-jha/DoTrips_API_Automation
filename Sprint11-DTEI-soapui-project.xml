@@ -1,0 +1,2682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="7c852b84-7ad6-48f1-a628-02c02989cd5b" activeEnvironment="Default" name="Sprint11-DTEI" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="5955772f-2f2e-4fa3-9911-568e4024fdd7" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtei.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint></con:endpoints><con:resource name="Deletes Experience AddOn" path="/api/v1/experience/addOns" id="2e4487d6-7011-46cb-bdb1-0ba71e94cb76"><con:settings/><con:parameters/><con:method name="Deletes Experience AddOn" id="4fa7a017-62c5-452c-9d89-a22bfa86d71f" method="DELETE"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:add="http://qa.dtei.dotrips.com/api/v1/experience/addOns">add:Response</con:element></con:representation><con:request name="Deletes Experience AddOn" id="98291c16-889b-4d36-bcfe-6b72865843bb" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request>{
+  "id": 1,
+  "isDeleted": false,
+  "lastUpdatedDate": "2016-10-17T05:49:21.016Z",
+  "lastUpdatedBy": "string",
+  "comment": "string",
+  "errors": {
+    "allErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalErrorCount": 0,
+    "globalErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "code": "string"
+    },
+    "fieldErrorCount": 0,
+    "fieldErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      }
+    ],
+    "fieldError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "field": "string",
+      "rejectedValue": {},
+      "bindingFailure": false,
+      "code": "string"
+    },
+    "nestedPath": "string",
+    "objectName": "string",
+    "errorCount": 0
+  }
+}</con:request><con:originalUri>http://qa.dtei.dotrips.com/api/v1/experience/addOns</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="785c0461-5a68-4b93-8cf8-f65f1307d487" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtei.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint></con:endpoints><con:resource name="AddOns" path="/api/v1/experience/addOns" id="291002a2-a954-4964-974f-193cb77388fc"><con:settings/><con:parameters/><con:method name="AddOns" id="c14a1d61-395a-41f6-b19e-86dd5c190553" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:add="http://qa.dtei.dotrips.com/api/v1/experience/addOns">add:Response</con:element></con:representation><con:request name="Request 1" id="e09a18f8-374f-477c-8a94-26f6385d9749" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request>{
+  "isDeleted": false,
+  "lastUpdatedDate": "2016-10-17T05:49:21.039Z",
+  "lastUpdatedBy": "string",
+  "createdDate": "2016-10-17T05:49:21.039Z",
+  "createdBy": "string",
+  "id": "string",
+  "experienceVariationId": "string",
+  "setupInformation": {
+    "sortColumn": "string",
+    "order": "string",
+    "max": 0,
+    "offset": 0,
+    "pageIndex": 0,
+    "importCsvMode": false,
+    "id": "string",
+    "name": "string",
+    "externalReferenceId": "string",
+    "experienceReferenceCode": "string",
+    "variationReferenceCode": "string",
+    "numberOfVariations": 0,
+    "extranet": false,
+    "supplierReferenceCode": "string",
+    "supplierName": "string",
+    "enabled": false,
+    "overrideCommission": false,
+    "overrideCommissionValue": "string",
+    "overrideCommissionNotes": "string",
+    "overrideCommissionValueType": "AMOUNT",
+    "source": "EXTRANET",
+    "experienceType": "OPEN_DAY",
+    "contractValidityFrom": "2016-10-17T05:49:21.040Z",
+    "contractValidityTo": "2016-10-17T05:49:21.040Z",
+    "duration": "string",
+    "cancellable": false,
+    "durationType": "HOURS",
+    "refundable": false,
+    "uiVisible": false,
+    "approved": false,
+    "currency": "AED",
+    "pricingCriteria": "GUEST_AGE_CATEGORY",
+    "supplierList": [
+      {
+        "supplierReferenceCode": "string",
+        "supplierName": "string",
+        "name": "string",
+        "referenceCode": "string"
+      }
+    ],
+    "geoCode": {
+      "latitude": "string",
+      "longitude": "string",
+      "geoCodeAccuracy": 0
+    },
+    "categories": [
+      {
+        "sortColumn": "string",
+        "order": "string",
+        "max": 0,
+        "offset": 0,
+        "pageIndex": 0,
+        "importCsvMode": false,
+        "id": 0,
+        "isPaginate": false,
+        "isFilter": false,
+        "categoryName": "string",
+        "displayName": {
+          "languageMappings": {}
+        },
+        "displayDescription": {
+          "languageMappings": {}
+        },
+        "externalReferenceCode": "string",
+        "currentUserId": "string",
+        "currentUserName": "string",
+        "lastUpdatedDateFrom": "2016-10-17T05:49:21.040Z",
+        "lastUpdatedDateTo": "2016-10-17T05:49:21.040Z",
+        "createdDateFrom": "2016-10-17T05:49:21.040Z",
+        "createdDateTo": "2016-10-17T05:49:21.040Z",
+        "lastUpdatedDate": "2016-10-17T05:49:21.040Z",
+        "createdDate": "2016-10-17T05:49:21.040Z",
+        "isDeleted": false,
+        "isEnabled": false,
+        "lastUpdatedBy": "string",
+        "createdBy": "string",
+        "categoryLogoImage": {
+          "originalFilename": "string",
+          "contentType": "string",
+          "name": "string",
+          "empty": false,
+          "bytes": [
+            "string"
+          ],
+          "size": 0,
+          "inputStream": {}
+        },
+        "categoryLogoUrl": "string",
+        "categoryImage": {},
+        "categoryImageUrl": {
+          "languageMappings": {}
+        }
+      }
+    ],
+    "categoryList": [
+      0
+    ],
+    "experienceLocation": {
+      "id": 0,
+      "addressType": "OFFICE",
+      "pincode": "string",
+      "addressLine": "string",
+      "locality": "string",
+      "localityName": "string",
+      "city": "string",
+      "cityName": "string",
+      "province": "string",
+      "provinceName": "string",
+      "country": "string",
+      "countryName": "string",
+      "region": "string",
+      "regionName": "string",
+      "countryId": 0
+    },
+    "updateNote": {
+      "updateTime": "2016-10-17T05:49:21.041Z",
+      "comment": "string",
+      "updatedBy": "string",
+      "moduleName": "string",
+      "formattedUploadedDate": "string"
+    },
+    "updateNotes": [
+      {
+        "updateTime": "2016-10-17T05:49:21.041Z",
+        "comment": "string",
+        "updatedBy": "string",
+        "moduleName": "string",
+        "formattedUploadedDate": "string"
+      }
+    ],
+    "isPaginate": false,
+    "isDeleted": false,
+    "lastUpdatedDate": "2016-10-17T05:49:21.041Z",
+    "lastUpdatedBy": "string",
+    "createdDate": "2016-10-17T05:49:21.041Z",
+    "createdBy": "string",
+    "errors": {
+      "allErrors": [
+        {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "code": "string"
+        }
+      ],
+      "globalErrorCount": 0,
+      "globalErrors": [
+        {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "code": "string"
+        }
+      ],
+      "globalError": {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      },
+      "fieldErrorCount": 0,
+      "fieldErrors": [
+        {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "field": "string",
+          "rejectedValue": {},
+          "bindingFailure": false,
+          "code": "string"
+        }
+      ],
+      "fieldError": {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      },
+      "nestedPath": "string",
+      "objectName": "string",
+      "errorCount": 0
+    }
+  },
+  "content": {
+    "extranetID": "string",
+    "specialInfoValidFrom": "2016-10-17T05:49:21.042Z",
+    "specialInfoValidTo": "2016-10-17T05:49:21.042Z",
+    "title": {
+      "languageMappings": {}
+    },
+    "description": {
+      "languageMappings": {}
+    },
+    "highlights": {
+      "languageMappings": {}
+    },
+    "inclusions": {
+      "languageMappings": {}
+    },
+    "exclusions": {
+      "languageMappings": {}
+    },
+    "cancellation_policy": {
+      "languageMappings": {}
+    },
+    "specialInformation": {
+      "languageMappings": {}
+    },
+    "ticketValidity": {
+      "languageMappings": {}
+    },
+    "amenities": [
+      {
+        "id": 0,
+        "amenityName": "string",
+        "displayName": "string"
+      }
+    ],
+    "amenityList": [
+      0
+    ],
+    "errors": {
+      "allErrors": [
+        {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "code": "string"
+        }
+      ],
+      "globalErrorCount": 0,
+      "globalErrors": [
+        {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "code": "string"
+        }
+      ],
+      "globalError": {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      },
+      "fieldErrorCount": 0,
+      "fieldErrors": [
+        {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "field": "string",
+          "rejectedValue": {},
+          "bindingFailure": false,
+          "code": "string"
+        }
+      ],
+      "fieldError": {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      },
+      "nestedPath": "string",
+      "objectName": "string",
+      "errorCount": 0
+    }
+  },
+  "contractDocument": {
+    "id": 0,
+    "experienceExtranetID": "string",
+    "title": "string",
+    "comment": "string",
+    "contractDocument": {
+      "originalFilename": "string",
+      "contentType": "string",
+      "name": "string",
+      "empty": false,
+      "bytes": [
+        "string"
+      ],
+      "size": 0,
+      "inputStream": {}
+    },
+    "filename": "string",
+    "uniqueKey": "string",
+    "createdBy": "string",
+    "createdDate": "2016-10-17T05:49:21.043Z",
+    "errors": {
+      "allErrors": [
+        {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "code": "string"
+        }
+      ],
+      "globalErrorCount": 0,
+      "globalErrors": [
+        {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "code": "string"
+        }
+      ],
+      "globalError": {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      },
+      "fieldErrorCount": 0,
+      "fieldErrors": [
+        {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "field": "string",
+          "rejectedValue": {},
+          "bindingFailure": false,
+          "code": "string"
+        }
+      ],
+      "fieldError": {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      },
+      "nestedPath": "string",
+      "objectName": "string",
+      "errorCount": 0
+    }
+  },
+  "contactInformation": {
+    "pickUpLocation": {
+      "id": 0,
+      "addressType": "OFFICE",
+      "pincode": "string",
+      "addressLine": "string",
+      "locality": "string",
+      "localityName": "string",
+      "city": "string",
+      "cityName": "string",
+      "province": "string",
+      "provinceName": "string",
+      "country": "string",
+      "countryName": "string",
+      "region": "string",
+      "regionName": "string",
+      "countryId": 0
+    },
+    "dropLocation": {
+      "id": 0,
+      "addressType": "OFFICE",
+      "pincode": "string",
+      "addressLine": "string",
+      "locality": "string",
+      "localityName": "string",
+      "city": "string",
+      "cityName": "string",
+      "province": "string",
+      "provinceName": "string",
+      "country": "string",
+      "countryName": "string",
+      "region": "string",
+      "regionName": "string",
+      "countryId": 0
+    },
+    "basicContact": {
+      "contactName": "string",
+      "email": "string",
+      "webURL": "string",
+      "fax": {
+        "type": "string",
+        "isdCode": "string",
+        "areaCode": "string",
+        "phoneNumber": "string",
+        "errors": {
+          "allErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "code": "string"
+            }
+          ],
+          "globalErrorCount": 0,
+          "globalErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "code": "string"
+            }
+          ],
+          "globalError": {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "code": "string"
+          },
+          "fieldErrorCount": 0,
+          "fieldErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "field": "string",
+              "rejectedValue": {},
+              "bindingFailure": false,
+              "code": "string"
+            }
+          ],
+          "fieldError": {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "field": "string",
+            "rejectedValue": {},
+            "bindingFailure": false,
+            "code": "string"
+          },
+          "nestedPath": "string",
+          "objectName": "string",
+          "errorCount": 0
+        }
+      },
+      "phone": {
+        "type": "string",
+        "isdCode": "string",
+        "areaCode": "string",
+        "phoneNumber": "string",
+        "errors": {
+          "allErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "code": "string"
+            }
+          ],
+          "globalErrorCount": 0,
+          "globalErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "code": "string"
+            }
+          ],
+          "globalError": {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "code": "string"
+          },
+          "fieldErrorCount": 0,
+          "fieldErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "field": "string",
+              "rejectedValue": {},
+              "bindingFailure": false,
+              "code": "string"
+            }
+          ],
+          "fieldError": {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "field": "string",
+            "rejectedValue": {},
+            "bindingFailure": false,
+            "code": "string"
+          },
+          "nestedPath": "string",
+          "objectName": "string",
+          "errorCount": 0
+        }
+      },
+      "altPhone": {
+        "type": "string",
+        "isdCode": "string",
+        "areaCode": "string",
+        "phoneNumber": "string",
+        "errors": {
+          "allErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "code": "string"
+            }
+          ],
+          "globalErrorCount": 0,
+          "globalErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "code": "string"
+            }
+          ],
+          "globalError": {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "code": "string"
+          },
+          "fieldErrorCount": 0,
+          "fieldErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "field": "string",
+              "rejectedValue": {},
+              "bindingFailure": false,
+              "code": "string"
+            }
+          ],
+          "fieldError": {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "field": "string",
+            "rejectedValue": {},
+            "bindingFailure": false,
+            "code": "string"
+          },
+          "nestedPath": "string",
+          "objectName": "string",
+          "errorCount": 0
+        }
+      },
+      "errors": {
+        "allErrors": [
+          {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "code": "string"
+          }
+        ],
+        "globalErrorCount": 0,
+        "globalErrors": [
+          {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "code": "string"
+          }
+        ],
+        "globalError": {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "code": "string"
+        },
+        "fieldErrorCount": 0,
+        "fieldErrors": [
+          {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "field": "string",
+            "rejectedValue": {},
+            "bindingFailure": false,
+            "code": "string"
+          }
+        ],
+        "fieldError": {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "field": "string",
+          "rejectedValue": {},
+          "bindingFailure": false,
+          "code": "string"
+        },
+        "nestedPath": "string",
+        "objectName": "string",
+        "errorCount": 0
+      }
+    },
+    "errors": {
+      "allErrors": [
+        {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "code": "string"
+        }
+      ],
+      "globalErrorCount": 0,
+      "globalErrors": [
+        {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "code": "string"
+        }
+      ],
+      "globalError": {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      },
+      "fieldErrorCount": 0,
+      "fieldErrors": [
+        {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "field": "string",
+          "rejectedValue": {},
+          "bindingFailure": false,
+          "code": "string"
+        }
+      ],
+      "fieldError": {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      },
+      "nestedPath": "string",
+      "objectName": "string",
+      "errorCount": 0
+    }
+  },
+  "experienceVariations": [
+    {
+      "isDeleted": false,
+      "lastUpdatedDate": "2016-10-17T05:49:21.049Z",
+      "lastUpdatedBy": "string",
+      "createdDate": "2016-10-17T05:49:21.049Z",
+      "createdBy": "string",
+      "id": "string",
+      "externalReferenceId": "string",
+      "referenceCode": "string",
+      "name": {
+        "languageMappings": {}
+      },
+      "description": {
+        "languageMappings": {}
+      },
+      "duration": "string",
+      "durationType": "HOURS",
+      "enabled": false,
+      "variationPricingInventories": [
+        {
+          "id": "string",
+          "experienceReferenceCode": "string",
+          "variationReferenceCode": "string",
+          "variable": false,
+          "date": "2016-10-17T05:49:21.050Z",
+          "day": 0,
+          "defaultInventory": false,
+          "allocatedInventory": 0,
+          "days": [
+            0
+          ],
+          "variationPricingRates": [
+            {
+              "id": "string",
+              "variationPricingCriteria": "ADULT",
+              "nettNettPurchasePrice": 0,
+              "nettNettPurchasePriceTax": 0,
+              "grossSellingPrice": 0,
+              "commission": 0,
+              "errors": {
+                "allErrors": [
+                  {
+                    "codes": [
+                      "string"
+                    ],
+                    "arguments": [
+                      {}
+                    ],
+                    "defaultMessage": "string",
+                    "objectName": "string",
+                    "code": "string"
+                  }
+                ],
+                "globalErrorCount": 0,
+                "globalErrors": [
+                  {
+                    "codes": [
+                      "string"
+                    ],
+                    "arguments": [
+                      {}
+                    ],
+                    "defaultMessage": "string",
+                    "objectName": "string",
+                    "code": "string"
+                  }
+                ],
+                "globalError": {
+                  "codes": [
+                    "string"
+                  ],
+                  "arguments": [
+                    {}
+                  ],
+                  "defaultMessage": "string",
+                  "objectName": "string",
+                  "code": "string"
+                },
+                "fieldErrorCount": 0,
+                "fieldErrors": [
+                  {
+                    "codes": [
+                      "string"
+                    ],
+                    "arguments": [
+                      {}
+                    ],
+                    "defaultMessage": "string",
+                    "objectName": "string",
+                    "field": "string",
+                    "rejectedValue": {},
+                    "bindingFailure": false,
+                    "code": "string"
+                  }
+                ],
+                "fieldError": {
+                  "codes": [
+                    "string"
+                  ],
+                  "arguments": [
+                    {}
+                  ],
+                  "defaultMessage": "string",
+                  "objectName": "string",
+                  "field": "string",
+                  "rejectedValue": {},
+                  "bindingFailure": false,
+                  "code": "string"
+                },
+                "nestedPath": "string",
+                "objectName": "string",
+                "errorCount": 0
+              }
+            }
+          ],
+          "isDeleted": false,
+          "lastUpdatedDate": "2016-10-17T05:49:21.051Z",
+          "lastUpdatedBy": "string",
+          "createdDate": "2016-10-17T05:49:21.051Z",
+          "createdBy": "string",
+          "errors": {
+            "allErrors": [
+              {
+                "codes": [
+                  "string"
+                ],
+                "arguments": [
+                  {}
+                ],
+                "defaultMessage": "string",
+                "objectName": "string",
+                "code": "string"
+              }
+            ],
+            "globalErrorCount": 0,
+            "globalErrors": [
+              {
+                "codes": [
+                  "string"
+                ],
+                "arguments": [
+                  {}
+                ],
+                "defaultMessage": "string",
+                "objectName": "string",
+                "code": "string"
+              }
+            ],
+            "globalError": {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "code": "string"
+            },
+            "fieldErrorCount": 0,
+            "fieldErrors": [
+              {
+                "codes": [
+                  "string"
+                ],
+                "arguments": [
+                  {}
+                ],
+                "defaultMessage": "string",
+                "objectName": "string",
+                "field": "string",
+                "rejectedValue": {},
+                "bindingFailure": false,
+                "code": "string"
+              }
+            ],
+            "fieldError": {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "field": "string",
+              "rejectedValue": {},
+              "bindingFailure": false,
+              "code": "string"
+            },
+            "nestedPath": "string",
+            "objectName": "string",
+            "errorCount": 0
+          }
+        }
+      ],
+      "variationPricingCsvFile": {
+        "originalFilename": "string",
+        "contentType": "string",
+        "name": "string",
+        "empty": false,
+        "bytes": [
+          "string"
+        ],
+        "size": 0,
+        "inputStream": {}
+      },
+      "defaultPricingInventoryMode": false,
+      "nettNettRateTaxInclusive": false,
+      "commission": 0,
+      "percentage": false,
+      "experienceName": "string",
+      "experienceReferenceCode": "string",
+      "uniqueKey": "string",
+      "pricingCriteria": "GUEST_AGE_CATEGORY",
+      "currency": "AED",
+      "guestEligibilities": [
+        {
+          "id": 0,
+          "ageCategory": "ADULT",
+          "allowed": false,
+          "minAge": 0,
+          "maxAge": 0,
+          "errors": {
+            "allErrors": [
+              {
+                "codes": [
+                  "string"
+                ],
+                "arguments": [
+                  {}
+                ],
+                "defaultMessage": "string",
+                "objectName": "string",
+                "code": "string"
+              }
+            ],
+            "globalErrorCount": 0,
+            "globalErrors": [
+              {
+                "codes": [
+                  "string"
+                ],
+                "arguments": [
+                  {}
+                ],
+                "defaultMessage": "string",
+                "objectName": "string",
+                "code": "string"
+              }
+            ],
+            "globalError": {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "code": "string"
+            },
+            "fieldErrorCount": 0,
+            "fieldErrors": [
+              {
+                "codes": [
+                  "string"
+                ],
+                "arguments": [
+                  {}
+                ],
+                "defaultMessage": "string",
+                "objectName": "string",
+                "field": "string",
+                "rejectedValue": {},
+                "bindingFailure": false,
+                "code": "string"
+              }
+            ],
+            "fieldError": {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "field": "string",
+              "rejectedValue": {},
+              "bindingFailure": false,
+              "code": "string"
+            },
+            "nestedPath": "string",
+            "objectName": "string",
+            "errorCount": 0
+          }
+        }
+      ],
+      "uploadedFileDetails": [
+        {
+          "isDeleted": false,
+          "uploadedDate": "2016-10-17T05:49:21.053Z",
+          "uploadedBy": "string",
+          "fileName": "string",
+          "uniqueKey": "string"
+        }
+      ],
+      "errors": {
+        "allErrors": [
+          {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "code": "string"
+          }
+        ],
+        "globalErrorCount": 0,
+        "globalErrors": [
+          {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "code": "string"
+          }
+        ],
+        "globalError": {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "code": "string"
+        },
+        "fieldErrorCount": 0,
+        "fieldErrors": [
+          {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "field": "string",
+            "rejectedValue": {},
+            "bindingFailure": false,
+            "code": "string"
+          }
+        ],
+        "fieldError": {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "field": "string",
+          "rejectedValue": {},
+          "bindingFailure": false,
+          "code": "string"
+        },
+        "nestedPath": "string",
+        "objectName": "string",
+        "errorCount": 0
+      },
+      "pricingLastUpdatedBy": "string",
+      "pricingLastUpdatedDate": "2016-10-17T05:49:21.054Z"
+    }
+  ],
+  "experienceImages": [
+    {
+      "id": 0,
+      "main": false,
+      "position": 0,
+      "fileName": {
+        "languageMappings": {}
+      },
+      "imageUrl": {
+        "languageMappings": {}
+      },
+      "file": {},
+      "enabled": false,
+      "lastUpdatedBy": "string",
+      "comment": "string",
+      "errors": {
+        "allErrors": [
+          {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "code": "string"
+          }
+        ],
+        "globalErrorCount": 0,
+        "globalErrors": [
+          {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "code": "string"
+          }
+        ],
+        "globalError": {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "code": "string"
+        },
+        "fieldErrorCount": 0,
+        "fieldErrors": [
+          {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "field": "string",
+            "rejectedValue": {},
+            "bindingFailure": false,
+            "code": "string"
+          }
+        ],
+        "fieldError": {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "field": "string",
+          "rejectedValue": {},
+          "bindingFailure": false,
+          "code": "string"
+        },
+        "nestedPath": "string",
+        "objectName": "string",
+        "errorCount": 0
+      }
+    }
+  ],
+  "experienceAddOns": [
+    {
+      "isDeleted": false,
+      "lastUpdatedDate": "2016-10-17T05:49:21.055Z",
+      "lastUpdatedBy": "string",
+      "createdDate": "2016-10-17T05:49:21.055Z",
+      "createdBy": "string",
+      "id": 0,
+      "experienceExtranetId": "string",
+      "addOnCode": "string",
+      "title": "string",
+      "amount": 0,
+      "currency": "AED",
+      "description": {
+        "languageMappings": {}
+      },
+      "contractValidityFrom": "2016-10-17T05:49:21.055Z",
+      "contractValidityTo": "2016-10-17T05:49:21.055Z",
+      "validityFrom": "2016-10-17T05:49:21.055Z",
+      "validityTo": "2016-10-17T05:49:21.055Z",
+      "payAtSite": false,
+      "experienceVariationsList": [
+        {
+          "id": "string",
+          "experienceExtranetId": "string",
+          "externalReferenceId": "string",
+          "enabled": false,
+          "name": "string",
+          "referenceCode": "string",
+          "durationType": "HOURS",
+          "duration": "string"
+        }
+      ],
+      "addOnVariationsList": [
+        {
+          "id": "string",
+          "experienceExtranetId": "string",
+          "externalReferenceId": "string",
+          "enabled": false,
+          "name": "string",
+          "referenceCode": "string",
+          "durationType": "HOURS",
+          "duration": "string"
+        }
+      ],
+      "addOnVariationIdsList": [
+        "string"
+      ],
+      "errors": {
+        "allErrors": [
+          {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "code": "string"
+          }
+        ],
+        "globalErrorCount": 0,
+        "globalErrors": [
+          {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "code": "string"
+          }
+        ],
+        "globalError": {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "code": "string"
+        },
+        "fieldErrorCount": 0,
+        "fieldErrors": [
+          {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "field": "string",
+            "rejectedValue": {},
+            "bindingFailure": false,
+            "code": "string"
+          }
+        ],
+        "fieldError": {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "field": "string",
+          "rejectedValue": {},
+          "bindingFailure": false,
+          "code": "string"
+        },
+        "nestedPath": "string",
+        "objectName": "string",
+        "errorCount": 0
+      }
+    }
+  ],
+  "policy": {
+    "isDeleted": false,
+    "lastUpdatedDate": "2016-10-17T05:49:21.056Z",
+    "lastUpdatedBy": "string",
+    "createdDate": "2016-10-17T05:49:21.056Z",
+    "createdBy": "string",
+    "id": 0,
+    "experienceExtranetId": "string",
+    "sellability": "PACKAGED",
+    "cancellable": false,
+    "refundable": false,
+    "tax": {},
+    "seasonalityRange": false,
+    "releaseDayType": "NO_RELEASE",
+    "releaseDays": 0,
+    "cancellationValue": "string",
+    "refundableValue": "string",
+    "pricingCriteria": "GUEST_AGE_CATEGORY",
+    "currency": "AED",
+    "contractValidityFrom": "2016-10-17T05:49:21.056Z",
+    "contractValidityTo": "2016-10-17T05:49:21.056Z",
+    "comment": "string",
+    "pricingAvailable": false,
+    "cancellationCharges": [
+      {
+        "id": 0,
+        "checkIn": 0,
+        "checkInUnit": "HOUR",
+        "amount": 0,
+        "amountType": "FLAT",
+        "currency": "AED",
+        "isDeleted": false,
+        "errors": {
+          "allErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "code": "string"
+            }
+          ],
+          "globalErrorCount": 0,
+          "globalErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "code": "string"
+            }
+          ],
+          "globalError": {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "code": "string"
+          },
+          "fieldErrorCount": 0,
+          "fieldErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "field": "string",
+              "rejectedValue": {},
+              "bindingFailure": false,
+              "code": "string"
+            }
+          ],
+          "fieldError": {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "field": "string",
+            "rejectedValue": {},
+            "bindingFailure": false,
+            "code": "string"
+          },
+          "nestedPath": "string",
+          "objectName": "string",
+          "errorCount": 0
+        }
+      }
+    ],
+    "guestEligibilities": [
+      {
+        "id": 0,
+        "ageCategory": "ADULT",
+        "allowed": false,
+        "minAge": 0,
+        "maxAge": 0,
+        "errors": {
+          "allErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "code": "string"
+            }
+          ],
+          "globalErrorCount": 0,
+          "globalErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "code": "string"
+            }
+          ],
+          "globalError": {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "code": "string"
+          },
+          "fieldErrorCount": 0,
+          "fieldErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "field": "string",
+              "rejectedValue": {},
+              "bindingFailure": false,
+              "code": "string"
+            }
+          ],
+          "fieldError": {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "field": "string",
+            "rejectedValue": {},
+            "bindingFailure": false,
+            "code": "string"
+          },
+          "nestedPath": "string",
+          "objectName": "string",
+          "errorCount": 0
+        }
+      }
+    ],
+    "seasonalityRanges": [
+      {
+        "id": 0,
+        "name": "string",
+        "fromDate": "2016-10-17T05:49:21.057Z",
+        "toDate": "2016-10-17T05:49:21.057Z",
+        "releaseDays": 0,
+        "isDeleted": false,
+        "errors": {
+          "allErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "code": "string"
+            }
+          ],
+          "globalErrorCount": 0,
+          "globalErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "code": "string"
+            }
+          ],
+          "globalError": {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "code": "string"
+          },
+          "fieldErrorCount": 0,
+          "fieldErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "field": "string",
+              "rejectedValue": {},
+              "bindingFailure": false,
+              "code": "string"
+            }
+          ],
+          "fieldError": {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "field": "string",
+            "rejectedValue": {},
+            "bindingFailure": false,
+            "code": "string"
+          },
+          "nestedPath": "string",
+          "objectName": "string",
+          "errorCount": 0
+        }
+      }
+    ],
+    "errors": {
+      "allErrors": [
+        {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "code": "string"
+        }
+      ],
+      "globalErrorCount": 0,
+      "globalErrors": [
+        {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "code": "string"
+        }
+      ],
+      "globalError": {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      },
+      "fieldErrorCount": 0,
+      "fieldErrors": [
+        {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "field": "string",
+          "rejectedValue": {},
+          "bindingFailure": false,
+          "code": "string"
+        }
+      ],
+      "fieldError": {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      },
+      "nestedPath": "string",
+      "objectName": "string",
+      "errorCount": 0
+    },
+    "cancellableValue": "string"
+  },
+  "experienceVariation": {
+    "isDeleted": false,
+    "lastUpdatedDate": "2016-10-17T05:49:21.058Z",
+    "lastUpdatedBy": "string",
+    "createdDate": "2016-10-17T05:49:21.058Z",
+    "createdBy": "string",
+    "id": "string",
+    "externalReferenceId": "string",
+    "referenceCode": "string",
+    "name": {
+      "languageMappings": {}
+    },
+    "description": {
+      "languageMappings": {}
+    },
+    "duration": "string",
+    "durationType": "HOURS",
+    "enabled": false,
+    "variationPricingInventories": [
+      {
+        "id": "string",
+        "experienceReferenceCode": "string",
+        "variationReferenceCode": "string",
+        "variable": false,
+        "date": "2016-10-17T05:49:21.058Z",
+        "day": 0,
+        "defaultInventory": false,
+        "allocatedInventory": 0,
+        "days": [
+          0
+        ],
+        "variationPricingRates": [
+          {
+            "id": "string",
+            "variationPricingCriteria": "ADULT",
+            "nettNettPurchasePrice": 0,
+            "nettNettPurchasePriceTax": 0,
+            "grossSellingPrice": 0,
+            "commission": 0,
+            "errors": {
+              "allErrors": [
+                {
+                  "codes": [
+                    "string"
+                  ],
+                  "arguments": [
+                    {}
+                  ],
+                  "defaultMessage": "string",
+                  "objectName": "string",
+                  "code": "string"
+                }
+              ],
+              "globalErrorCount": 0,
+              "globalErrors": [
+                {
+                  "codes": [
+                    "string"
+                  ],
+                  "arguments": [
+                    {}
+                  ],
+                  "defaultMessage": "string",
+                  "objectName": "string",
+                  "code": "string"
+                }
+              ],
+              "globalError": {
+                "codes": [
+                  "string"
+                ],
+                "arguments": [
+                  {}
+                ],
+                "defaultMessage": "string",
+                "objectName": "string",
+                "code": "string"
+              },
+              "fieldErrorCount": 0,
+              "fieldErrors": [
+                {
+                  "codes": [
+                    "string"
+                  ],
+                  "arguments": [
+                    {}
+                  ],
+                  "defaultMessage": "string",
+                  "objectName": "string",
+                  "field": "string",
+                  "rejectedValue": {},
+                  "bindingFailure": false,
+                  "code": "string"
+                }
+              ],
+              "fieldError": {
+                "codes": [
+                  "string"
+                ],
+                "arguments": [
+                  {}
+                ],
+                "defaultMessage": "string",
+                "objectName": "string",
+                "field": "string",
+                "rejectedValue": {},
+                "bindingFailure": false,
+                "code": "string"
+              },
+              "nestedPath": "string",
+              "objectName": "string",
+              "errorCount": 0
+            }
+          }
+        ],
+        "isDeleted": false,
+        "lastUpdatedDate": "2016-10-17T05:49:21.059Z",
+        "lastUpdatedBy": "string",
+        "createdDate": "2016-10-17T05:49:21.059Z",
+        "createdBy": "string",
+        "errors": {
+          "allErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "code": "string"
+            }
+          ],
+          "globalErrorCount": 0,
+          "globalErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "code": "string"
+            }
+          ],
+          "globalError": {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "code": "string"
+          },
+          "fieldErrorCount": 0,
+          "fieldErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "field": "string",
+              "rejectedValue": {},
+              "bindingFailure": false,
+              "code": "string"
+            }
+          ],
+          "fieldError": {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "field": "string",
+            "rejectedValue": {},
+            "bindingFailure": false,
+            "code": "string"
+          },
+          "nestedPath": "string",
+          "objectName": "string",
+          "errorCount": 0
+        }
+      }
+    ],
+    "variationPricingCsvFile": {
+      "originalFilename": "string",
+      "contentType": "string",
+      "name": "string",
+      "empty": false,
+      "bytes": [
+        "string"
+      ],
+      "size": 0,
+      "inputStream": {}
+    },
+    "defaultPricingInventoryMode": false,
+    "nettNettRateTaxInclusive": false,
+    "commission": 0,
+    "percentage": false,
+    "experienceName": "string",
+    "experienceReferenceCode": "string",
+    "uniqueKey": "string",
+    "pricingCriteria": "GUEST_AGE_CATEGORY",
+    "currency": "AED",
+    "guestEligibilities": [
+      {
+        "id": 0,
+        "ageCategory": "ADULT",
+        "allowed": false,
+        "minAge": 0,
+        "maxAge": 0,
+        "errors": {
+          "allErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "code": "string"
+            }
+          ],
+          "globalErrorCount": 0,
+          "globalErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "code": "string"
+            }
+          ],
+          "globalError": {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "code": "string"
+          },
+          "fieldErrorCount": 0,
+          "fieldErrors": [
+            {
+              "codes": [
+                "string"
+              ],
+              "arguments": [
+                {}
+              ],
+              "defaultMessage": "string",
+              "objectName": "string",
+              "field": "string",
+              "rejectedValue": {},
+              "bindingFailure": false,
+              "code": "string"
+            }
+          ],
+          "fieldError": {
+            "codes": [
+              "string"
+            ],
+            "arguments": [
+              {}
+            ],
+            "defaultMessage": "string",
+            "objectName": "string",
+            "field": "string",
+            "rejectedValue": {},
+            "bindingFailure": false,
+            "code": "string"
+          },
+          "nestedPath": "string",
+          "objectName": "string",
+          "errorCount": 0
+        }
+      }
+    ],
+    "uploadedFileDetails": [
+      {
+        "isDeleted": false,
+        "uploadedDate": "2016-10-17T05:49:21.060Z",
+        "uploadedBy": "string",
+        "fileName": "string",
+        "uniqueKey": "string"
+      }
+    ],
+    "errors": {
+      "allErrors": [
+        {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "code": "string"
+        }
+      ],
+      "globalErrorCount": 0,
+      "globalErrors": [
+        {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "code": "string"
+        }
+      ],
+      "globalError": {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      },
+      "fieldErrorCount": 0,
+      "fieldErrors": [
+        {
+          "codes": [
+            "string"
+          ],
+          "arguments": [
+            {}
+          ],
+          "defaultMessage": "string",
+          "objectName": "string",
+          "field": "string",
+          "rejectedValue": {},
+          "bindingFailure": false,
+          "code": "string"
+        }
+      ],
+      "fieldError": {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      },
+      "nestedPath": "string",
+      "objectName": "string",
+      "errorCount": 0
+    },
+    "pricingLastUpdatedBy": "string",
+    "pricingLastUpdatedDate": "2016-10-17T05:49:21.060Z"
+  }
+}</con:request><con:originalUri>http://qa.dtei.dotrips.com/api/v1/experience/addOns</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="9a6de036-00af-450b-9bff-304193fabf60" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtei.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint></con:endpoints><con:resource name="Get Experience AddOn" path="/api/v1/experience/addOns/30" id="c51c83f9-8a99-4346-905c-773f4a970df4"><con:settings/><con:parameters/><con:method name="Get Experience AddOn" id="31f89a29-c757-44f3-97b1-a4491540658d" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://qa.dtei.dotrips.com/api/v1/experience/addOns/1">ns:Response</con:element></con:representation><con:request name="Get Experience AddOn" id="f45636ce-fa4c-4775-b429-3ac0d5358606" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtei.dotrips.com/api/v1/experience/addOns/1</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="257a0e44-415b-4447-b784-07ed0febdc44" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtei.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint></con:endpoints><con:resource name="Save or update Rule And Offer" path="/api/v1/experience/rulesAndOffers" id="95696a5c-7bd0-4559-a36e-58eb978ec27c"><con:settings/><con:parameters/><con:method name="Save or update Rule And Offer" id="facd4fed-85f5-4bbb-8953-a0f64a9c0418" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:rul="http://qa.dtei.dotrips.com/api/v1/experience/rulesAndOffers">rul:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Save or update Rule And Offer" id="47170aaf-2f29-4347-b6e1-1f22038aa8fa" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request>{
+  "isDeleted": false,
+  "lastUpdatedDate": "2016-10-17T05:49:21.258Z",
+  "lastUpdatedBy": "string",
+  "createdDate": "2016-10-17T05:49:21.258Z",
+  "createdBy": "string",
+  "experienceExtranetId": "string",
+  "experienceLastUpdatedBy": "string",
+  "experienceLastUpdatedDate": "2016-10-17T05:49:21.258Z",
+  "contractValidityFrom": "2016-10-17T05:49:21.258Z",
+  "contractValidityTo": "2016-10-17T05:49:21.258Z",
+  "updateNote": {
+    "updateTime": "2016-10-17T05:49:21.258Z",
+    "comment": "string",
+    "updatedBy": "string",
+    "moduleName": "string",
+    "formattedUploadedDate": "string"
+  },
+  "experienceVariationId": "string",
+  "variationRefCode": "string",
+  "ruleAndOfferId": 0,
+  "flatDiscount": 0,
+  "isPercentage": false,
+  "isFreeSalesEnabled": false,
+  "isStopSalesEnabled": false,
+  "useAllottedInventoryForFreeSales": false,
+  "freeSalesActivateFromDate": "2016-10-17T05:49:21.258Z",
+  "freeSalesActivateToDate": "2016-10-17T05:49:21.258Z",
+  "stopSalesActivateFromDate": "2016-10-17T05:49:21.258Z",
+  "stopSalesActivateToDate": "2016-10-17T05:49:21.258Z",
+  "ruleAndOfferLastUpdatedDate": "string",
+  "title": "string",
+  "errors": {
+    "allErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalErrorCount": 0,
+    "globalErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "code": "string"
+    },
+    "fieldErrorCount": 0,
+    "fieldErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      }
+    ],
+    "fieldError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "field": "string",
+      "rejectedValue": {},
+      "bindingFailure": false,
+      "code": "string"
+    },
+    "nestedPath": "string",
+    "objectName": "string",
+    "errorCount": 0
+  }
+}</con:request><con:originalUri>http://qa.dtei.dotrips.com/api/v1/experience/rulesAndOffers</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="a732c266-a747-4c54-becc-6b55261a01dc" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtei.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint></con:endpoints><con:resource name="Get Rules And Offers Default Pricing" path="/api/v1/experience/rulesAndOffers/2" id="e80707f1-2506-4d06-bb6f-36d1fefa519b"><con:settings/><con:parameters/><con:method name="Get Rules And Offers Default Pricing" id="686bac20-87a4-4725-a14f-b3598562a949" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://qa.dtei.dotrips.com/api/v1/experience/rulesAndOffers/1">ns:Response</con:element></con:representation><con:request name="Get Rules And Offers Default Pricing" id="0be356fa-f845-4c3d-afb2-d9025e4e56d3" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtei.dotrips.com/api/v1/experience/rulesAndOffers/1</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="cc591264-5b39-444c-a759-2b9c882142dc" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtei.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint></con:endpoints><con:resource name="VariationPricingInventory" path="/api/v1/experience/variationPricingInventory" id="17be7355-6ba9-4918-b440-19d00876cd95"><con:settings/><con:parameters/><con:method name="VariationPricingInventory" id="7d7bda59-94fd-4dc1-beff-048ad3056c59" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:var="http://qa.dtei.dotrips.com/api/v1/experience/variationPricingInventory">var:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="5125e774-ef10-4657-8949-4807bddafc6f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtei.dotrips.com/api/v1/experience/variationPricingInventory</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="6a6d4ae9-97c4-4e4f-98a1-cd24b18bf49e" name="Sprint11-DTEI"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="ae34ec83-51fe-47b2-9fbf-2a67b6cc209c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Deletes Experience AddOn" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Deletes Experience AddOn when invalid id is passed" id="85426177-296d-4db1-812f-839653882c8b"><con:settings/><con:config service="http://qa.dtei.dotrips.com" resourcePath="/api/v1/experience/addOns" methodName="Deletes Experience AddOn" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Deletes Experience AddOn when invalid id is passed" id="98291c16-889b-4d36-bcfe-6b72865843bb" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request>{
+  "id": 0,
+  "isDeleted": false,
+  "lastUpdatedDate": "2016-10-17T05:49:21.016Z",
+  "lastUpdatedBy": "string",
+  "comment": "string",
+  "errors": {
+    "allErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalErrorCount": 0,
+    "globalErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "code": "string"
+    },
+    "fieldErrorCount": 0,
+    "fieldErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      }
+    ],
+    "fieldError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "field": "string",
+      "rejectedValue": {},
+      "bindingFailure": false,
+      "code": "string"
+    },
+    "nestedPath": "string",
+    "objectName": "string",
+    "errorCount": 0
+  }
+}</con:request><con:originalUri>http://qa.dtei.dotrips.com/api/v1/experience/addOns</con:originalUri><con:assertion type="Simple Contains" id="339f26df-7c25-4091-9159-08b5283038fc" name="Contains"><con:configuration><token>Experience AddOn cannot be deleted</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Deletes Experience AddOn" id="3a0ff0cf-e13e-4886-be35-f460cb33499d"><con:settings/><con:config service="http://qa.dtei.dotrips.com" resourcePath="/api/v1/experience/addOns" methodName="Deletes Experience AddOn" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Deletes Experience AddOn" id="98291c16-889b-4d36-bcfe-6b72865843bb" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request>{
+  "id": 1,
+  "isDeleted": false,
+  "lastUpdatedDate": "2016-10-17T05:49:21.016Z",
+  "lastUpdatedBy": "string",
+  "comment": "string",
+  "errors": {
+    "allErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalErrorCount": 0,
+    "globalErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "code": "string"
+    },
+    "fieldErrorCount": 0,
+    "fieldErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      }
+    ],
+    "fieldError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "field": "string",
+      "rejectedValue": {},
+      "bindingFailure": false,
+      "code": "string"
+    },
+    "nestedPath": "string",
+    "objectName": "string",
+    "errorCount": 0
+  }
+}</con:request><con:originalUri>http://qa.dtei.dotrips.com/api/v1/experience/addOns</con:originalUri><con:assertion type="Simple Contains" id="339f26df-7c25-4091-9159-08b5283038fc" name="Contains"><con:configuration><token>Experience AddOn successfully deleted</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="a5807bae-4725-4d9b-9bb5-77e2d2c30211" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get Experience AddOn" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Get Experience AddOn - Get Experience AddOn" id="683e1e08-f37f-49fa-8e94-85f711110083"><con:settings/><con:config service="http://qa.dtei.dotrips.com" resourcePath="/api/v1/experience/addOns/30" methodName="Get Experience AddOn" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get Experience AddOn - Get Experience AddOn" id="f45636ce-fa4c-4775-b429-3ac0d5358606" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtei.dotrips.com/api/v1/experience/addOns/1</con:originalUri><con:assertion type="Simple Contains" id="3f58889a-ffb6-471e-b9a2-f247d7e6b990" name="Contains"><con:configuration><token>Experience with ID 30 does not exists</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="9c570218-25eb-4184-8153-f7cb71813df1" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="6fa148fb-7d54-455c-90a3-d2f2821f7885" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Save or update Rule And Offer" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Save or update Rule And Offer - Save or update Rule And Offer" id="c9ce6086-9ce2-4cda-954a-4ad8ded69242"><con:settings/><con:config service="http://qa.dtei.dotrips.com" resourcePath="/api/v1/experience/rulesAndOffers" methodName="Save or update Rule And Offer" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Save or update Rule And Offer - Save or update Rule And Offer" id="47170aaf-2f29-4347-b6e1-1f22038aa8fa" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request>{
+  "isDeleted": false,
+  "lastUpdatedDate": "2016-10-17T05:49:21.258Z",
+  "lastUpdatedBy": "string",
+  "createdDate": "2016-10-17T05:49:21.258Z",
+  "createdBy": "string",
+  "experienceExtranetId": "string",
+  "experienceLastUpdatedBy": "string",
+  "experienceLastUpdatedDate": "2016-10-17T05:49:21.258Z",
+  "contractValidityFrom": "2016-10-17T05:49:21.258Z",
+  "contractValidityTo": "2016-10-17T05:49:21.258Z",
+  "updateNote": {
+    "updateTime": "2016-10-17T05:49:21.258Z",
+    "comment": "string",
+    "updatedBy": "string",
+    "moduleName": "string",
+    "formattedUploadedDate": "string"
+  },
+  "experienceVariationId": "string",
+  "variationRefCode": "string",
+  "ruleAndOfferId": 0,
+  "flatDiscount": 0,
+  "isPercentage": false,
+  "isFreeSalesEnabled": false,
+  "isStopSalesEnabled": false,
+  "useAllottedInventoryForFreeSales": false,
+  "freeSalesActivateFromDate": "2016-10-17T05:49:21.258Z",
+  "freeSalesActivateToDate": "2016-10-17T05:49:21.258Z",
+  "stopSalesActivateFromDate": "2016-10-17T05:49:21.258Z",
+  "stopSalesActivateToDate": "2016-10-17T05:49:21.258Z",
+  "ruleAndOfferLastUpdatedDate": "string",
+  "title": "string",
+  "errors": {
+    "allErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalErrorCount": 0,
+    "globalErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "code": "string"
+    },
+    "fieldErrorCount": 0,
+    "fieldErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      }
+    ],
+    "fieldError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "field": "string",
+      "rejectedValue": {},
+      "bindingFailure": false,
+      "code": "string"
+    },
+    "nestedPath": "string",
+    "objectName": "string",
+    "errorCount": 0
+  }
+}</con:request><con:originalUri>http://qa.dtei.dotrips.com/api/v1/experience/rulesAndOffers</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="3c39cb5c-d1a4-44fc-9eea-0bf5b2ee6909" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get Rules And Offers Default Pricing when no Extranet Exists" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Get Rules And Offers Default Pricing when no Extranet Exists" id="6700f657-c755-4fb7-9e26-ca0ba28a3be1"><con:settings/><con:config service="http://qa.dtei.dotrips.com" resourcePath="/api/v1/experience/rulesAndOffers/2" methodName="Get Rules And Offers Default Pricing" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get Rules And Offers Default Pricing when no Extranet Exists" id="0be356fa-f845-4c3d-afb2-d9025e4e56d3" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtei.dotrips.com/api/v1/experience/rulesAndOffers/1</con:originalUri><con:assertion type="Simple Contains" id="979032a5-4c74-47c5-a49c-b8049eeeaabe" name="Contains"><con:configuration><token>No Extranet Exists</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="ea6eb656-1493-46ef-bc75-fe0431600aaa" name="Response SLA"><con:configuration><SLA>300</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
