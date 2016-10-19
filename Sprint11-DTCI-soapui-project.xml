@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="9db3d88e-673e-4974-8e19-ca2bb44e7155" activeEnvironment="Default" name="Sprint11-DTCI" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="d7540f41-9441-40eb-9148-95bedb611857" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtci.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://qa.dtci.dotrips.com</con:endpoint></con:endpoints><con:resource name="EnableDisableEvent" path="/api/v1/event/enableDisableEvent" id="5557635d-c55f-41b0-9b44-2e3d17b78f71"><con:settings/><con:parameters/><con:method name="EnableDisableEvent" id="4606219e-8e9e-43b8-8059-4cba7651c15f" method="PUT"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:enab="http://qa.dtci.dotrips.com/api/v1/event/enableDisableEvent">enab:Response</con:element></con:representation><con:request name="Enable/Disable Event" id="9842b223-17bf-483d-8efd-053dacff8cfd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtci.dotrips.com</con:endpoint><con:request>{
+  "sortColumn": "string",
+  "order": "string",
+  "max": 0,
+  "offset": 0,
+  "pageIndex": 0,
+  "importCsvMode": false,
+  "isPaginate": false,
+  "isFilter": false,
+  "id": 1,
+  "name": {
+    "languageMappings": {}
+  },
+  "description": {
+    "languageMappings": {}
+  },
+  "startDate": "2016-10-19T11:49:43.361Z",
+  "endDate": "2016-10-19T11:49:43.361Z",
+  "startTime": "string",
+  "endTime": "string",
+  "image": {
+    "languageMappings": {}
+  },
+  "venue": {
+    "languageMappings": {}
+  },
+  "countryId": 0,
+  "provinceId": 0,
+  "cityId": 0,
+  "contactEmail": "string",
+  "contactNumber": "string",
+  "webUrl": "string",
+  "redirectionUrl": "string",
+  "isEnabled": false,
+  "isMainBanner": false,
+  "createdBy": "string",
+  "lastUpdatedBy": "string",
+  "lastUpdatedDateFrom": "2016-10-19T11:49:43.361Z",
+  "lastUpdatedDateTo": "2016-10-19T11:49:43.361Z",
+  "file": {},
+  "city": {
+    "sortColumn": "string",
+    "order": "string",
+    "max": 0,
+    "offset": 0,
+    "pageIndex": 0,
+    "importCsvMode": false,
+    "id": 0,
+    "name": "string",
+    "displayName": {
+      "languageMappings": {}
+    },
+    "areaPhoneCode": "string",
+    "provinceId": 0,
+    "provinceName": "string",
+    "countryName": "string",
+    "countryId": 0,
+    "code": "string",
+    "createdBy": "string",
+    "lastUpdatedBy": "string",
+    "lastUpdatedDate": "2016-10-19T11:49:43.361Z",
+    "iataCode": "string",
+    "nearestAirport": "string",
+    "lastUpdatedDateFrom": "2016-10-19T11:49:43.361Z",
+    "lastUpdatedDateTo": "2016-10-19T11:49:43.361Z"
+  },
+  "errors": {
+    "globalErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "code": "string"
+    },
+    "fieldErrorCount": 0,
+    "fieldErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      }
+    ],
+    "fieldError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "field": "string",
+      "rejectedValue": {},
+      "bindingFailure": false,
+      "code": "string"
+    },
+    "allErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalErrorCount": 0,
+    "nestedPath": "string",
+    "objectName": "string",
+    "errorCount": 0
+  }
+}</con:request><con:originalUri>http://qa.dtci.dotrips.com/api/v1/event/enableDisableEvent</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="3967c496-b463-4a72-939f-056f185ba36a" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtci.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://qa.dtci.dotrips.com</con:endpoint></con:endpoints><con:resource name="GET Event" path="/api/v1/event/1" id="dde6aa13-ffc5-4aff-a5f1-7cc3efb66cd3"><con:settings/><con:parameters/><con:method name="GET Event" id="3caf36f0-c929-4fcd-88f3-199870e14c7f" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://qa.dtci.dotrips.com/api/v1/event/1">ns:Response</con:element></con:representation><con:request name="GET Event" id="3f317e43-5dba-42ec-9fcf-b429073e16e0" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtci.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtci.dotrips.com/api/v1/event/1</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="5867547a-7410-4d2e-a386-674cfb4e4dc0" name="Sprint11-DTCI"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="b00fc24a-3b5d-43ec-90e6-bf4f6c41298a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Enable/Disable Event" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="EnableDisableEvent - Enable/Disable Event" id="6186cd7e-4441-45b6-b6b3-43d8ec6d71c2"><con:settings/><con:config service="http://qa.dtci.dotrips.com" resourcePath="/api/v1/event/enableDisableEvent" methodName="EnableDisableEvent" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="EnableDisableEvent - Enable/Disable Event" id="9842b223-17bf-483d-8efd-053dacff8cfd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtci.dotrips.com</con:endpoint><con:request>{
+  "sortColumn": "string",
+  "order": "string",
+  "max": 0,
+  "offset": 0,
+  "pageIndex": 0,
+  "importCsvMode": false,
+  "isPaginate": false,
+  "isFilter": false,
+  "id": 1,
+  "name": {
+    "languageMappings": {}
+  },
+  "description": {
+    "languageMappings": {}
+  },
+  "startDate": "2016-10-19T11:49:43.361Z",
+  "endDate": "2016-10-19T11:49:43.361Z",
+  "startTime": "string",
+  "endTime": "string",
+  "image": {
+    "languageMappings": {}
+  },
+  "venue": {
+    "languageMappings": {}
+  },
+  "countryId": 0,
+  "provinceId": 0,
+  "cityId": 0,
+  "contactEmail": "string",
+  "contactNumber": "string",
+  "webUrl": "string",
+  "redirectionUrl": "string",
+  "isEnabled": false,
+  "isMainBanner": false,
+  "createdBy": "string",
+  "lastUpdatedBy": "string",
+  "lastUpdatedDateFrom": "2016-10-19T11:49:43.361Z",
+  "lastUpdatedDateTo": "2016-10-19T11:49:43.361Z",
+  "file": {},
+  "city": {
+    "sortColumn": "string",
+    "order": "string",
+    "max": 0,
+    "offset": 0,
+    "pageIndex": 0,
+    "importCsvMode": false,
+    "id": 0,
+    "name": "string",
+    "displayName": {
+      "languageMappings": {}
+    },
+    "areaPhoneCode": "string",
+    "provinceId": 0,
+    "provinceName": "string",
+    "countryName": "string",
+    "countryId": 0,
+    "code": "string",
+    "createdBy": "string",
+    "lastUpdatedBy": "string",
+    "lastUpdatedDate": "2016-10-19T11:49:43.361Z",
+    "iataCode": "string",
+    "nearestAirport": "string",
+    "lastUpdatedDateFrom": "2016-10-19T11:49:43.361Z",
+    "lastUpdatedDateTo": "2016-10-19T11:49:43.361Z"
+  },
+  "errors": {
+    "globalErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "code": "string"
+    },
+    "fieldErrorCount": 0,
+    "fieldErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      }
+    ],
+    "fieldError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "field": "string",
+      "rejectedValue": {},
+      "bindingFailure": false,
+      "code": "string"
+    },
+    "allErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalErrorCount": 0,
+    "nestedPath": "string",
+    "objectName": "string",
+    "errorCount": 0
+  }
+}</con:request><con:originalUri>http://qa.dtci.dotrips.com/api/v1/event/enableDisableEvent</con:originalUri><con:assertion type="Simple Contains" id="da574656-9253-48c4-a177-79961237066f" name="Contains"><con:configuration><token>Event has been disabled successfully</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="563ca550-393e-40ae-975f-084b5df2b0b8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GET Event" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GET Event - GET Event" id="89ecfa73-28e1-4866-92dd-85d0d1f3ff0c"><con:settings/><con:config service="http://qa.dtci.dotrips.com" resourcePath="/api/v1/event/1" methodName="GET Event" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET Event - GET Event" id="3f317e43-5dba-42ec-9fcf-b429073e16e0" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtci.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtci.dotrips.com/api/v1/event/1</con:originalUri><con:assertion type="Simple Contains" id="b97306d7-c028-4d8c-8cce-bc0efd1ef73a" name="Contains"><con:configuration><token>Event has been fetched successfully.</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="3e43b2ad-49f5-4ddb-b77a-008e9a0f2f61" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper 
+
+def responseContent = messageExchange.getResponseContent() 
+
+log.info responseContent
+
+def slurper = new JsonSlurper()
+def json = slurper.parseText responseContent
+
+log.info json.data.cityId
+
+def cityList= json.data.cityId
+log.info cityList.getClass()
+def a=cityList.find{
+	it==14
+}
+
+log.info a
+
+assert a==14</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="8b729a99-4652-4358-99b5-9dbd3717542d" name="Script Assertion 1"><con:configuration><scriptText>import groovy.json.JsonSlurper 
+
+def responseContent = messageExchange.getResponseContent() 
+
+log.info responseContent
+
+def slurper = new JsonSlurper()
+def json = slurper.parseText responseContent
+
+log.info json.data.countryId
+
+def countryList= json.data.countryId
+log.info countryList.getClass()
+def a=countryList.find{
+	it==1
+}
+
+log.info a
+
+assert a==1</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="fbc98188-4e3f-4f06-9e5a-0ac4aa9b3dd2" name="verify event id"><con:configuration><scriptText>import groovy.json.JsonSlurper 
+
+def responseContent = messageExchange.getResponseContent() 
+
+
+def slurper = new JsonSlurper()
+def json = slurper.parseText responseContent
+
+log.info json.data.id
+
+assert json.data.id==1</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
