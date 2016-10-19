@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="9ab990d4-3368-4cd6-a69e-a5b9baab1f5e" activeEnvironment="Default" name="Sprint11-DTHI" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="6e7ecc8a-9494-430e-a457-3ded2fa23615" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dthi.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://qa.dthi.dotrips.com</con:endpoint></con:endpoints><con:resource name="Delete Master Hotel" path="/api/v1/masterHotel/delete" id="f0ff4cd4-fd06-4f60-aa09-c96c9290cde1"><con:settings/><con:parameters/><con:method name="Delete Master Hotel" id="1633c25a-e79c-4ec8-9e81-f4656f25b01e" method="DELETE"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:cre="http://qa.dthi.dotrips.com/api/v1/createMaster">cre:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:cre="http://qa.dthi.dotrips.com/api/v1/createMaster">cre:Response</con:element></con:representation><con:request name="Delete Master Hotel" id="45b0c1b7-a0ae-415f-9d0f-5799123f8457" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dthi.dotrips.com</con:endpoint><con:request>{
+  "id": 2,
+  "isDeleted": false,
+  "lastUpdatedDate": "2016-10-19T10:18:20.220Z",
+  "lastUpdatedBy": "string",
+  "comment": "string",
+  "errors": {
+    "globalErrorCount": 0,
+    "nestedPath": "string",
+    "allErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "code": "string"
+    },
+    "fieldErrorCount": 0,
+    "fieldErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      }
+    ],
+    "fieldError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "field": "string",
+      "rejectedValue": {},
+      "bindingFailure": false,
+      "code": "string"
+    },
+    "objectName": "string",
+    "errorCount": 0
+  }
+}</con:request><con:originalUri>http://qa.dthi.dotrips.com/api/v1/createMaster</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="009589a5-f62c-49b7-a2a7-efda148e14d6" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dthi.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://qa.dthi.dotrips.com</con:endpoint></con:endpoints><con:resource name="GetContactInformation" path="/api/v1/getContactInformation" id="73c44ee7-96b0-4d1c-b997-6fc4682f540c"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value>1</con:value><con:style>QUERY</con:style><con:default>1</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="GetContactInformation" id="bfe3387d-1974-4e44-ac4d-4555101558a5" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:get="http://qa.dthi.dotrips.com/api/v1/getContactInformation">get:Fault</con:element></con:representation><con:request name="Request 1" id="3d23f88a-40b8-4285-bab9-ab4fb0de2d00" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dthi.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dthi.dotrips.com/api/v1/getContactInformation</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="4" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="d74e7c98-3641-4fe2-9af9-5a09bee9ef74" name="Sprint11-DTHI"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="1e0df8d9-f4ff-4a0a-b051-22762e2ff76d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Delete Master Hotel" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Delete Master Hotel - Delete Master Hotel" id="39df7c4e-1518-4474-8289-d5efde59e27f"><con:settings/><con:config service="http://qa.dthi.dotrips.com" resourcePath="/api/v1/masterHotel/delete" methodName="Delete Master Hotel" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delete Master Hotel - Delete Master Hotel" id="45b0c1b7-a0ae-415f-9d0f-5799123f8457" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dthi.dotrips.com</con:endpoint><con:request>{
+  "id": 3,
+  "isDeleted": false,
+  "lastUpdatedDate": "2016-10-19T10:18:20.220Z",
+  "lastUpdatedBy": "string",
+  "comment": "string",
+  "errors": {
+    "globalErrorCount": 0,
+    "nestedPath": "string",
+    "allErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "code": "string"
+    },
+    "fieldErrorCount": 0,
+    "fieldErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      }
+    ],
+    "fieldError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "field": "string",
+      "rejectedValue": {},
+      "bindingFailure": false,
+      "code": "string"
+    },
+    "objectName": "string",
+    "errorCount": 0
+  }
+}</con:request><con:originalUri>http://qa.dthi.dotrips.com/api/v1/createMaster</con:originalUri><con:assertion type="Simple Contains" id="f25f1c68-7e77-4b35-8481-65a50cde25b4" name="Contains"><con:configuration><token>No Master Hotel with the given ID found. Please try again.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="83151ae7-b673-454c-8fe0-fbb2e468ea5c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Delete Master Hotel successfully" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Delete Master Hotel - Delete Master Hotel" id="78f3f3bf-2202-415e-a5cf-84122be8162f"><con:settings/><con:config service="http://qa.dthi.dotrips.com" resourcePath="/api/v1/masterHotel/delete" methodName="Delete Master Hotel" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delete Master Hotel - Delete Master Hotel" id="45b0c1b7-a0ae-415f-9d0f-5799123f8457" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dthi.dotrips.com</con:endpoint><con:request>{
+  "id": 3,
+  "isDeleted": false,
+  "lastUpdatedDate": "2016-10-19T10:18:20.220Z",
+  "lastUpdatedBy": "string",
+  "comment": "string",
+  "errors": {
+    "globalErrorCount": 0,
+    "nestedPath": "string",
+    "allErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "code": "string"
+    },
+    "fieldErrorCount": 0,
+    "fieldErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      }
+    ],
+    "fieldError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "field": "string",
+      "rejectedValue": {},
+      "bindingFailure": false,
+      "code": "string"
+    },
+    "objectName": "string",
+    "errorCount": 0
+  }
+}</con:request><con:originalUri>http://qa.dthi.dotrips.com/api/v1/createMaster</con:originalUri><con:assertion type="Simple Contains" id="f25f1c68-7e77-4b35-8481-65a50cde25b4" name="Contains"><con:configuration><token>Master Hotel deleted successfully</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
