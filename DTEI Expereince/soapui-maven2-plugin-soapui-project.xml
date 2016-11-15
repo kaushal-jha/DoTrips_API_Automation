@@ -4433,7 +4433,104 @@
 }</con:request><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/content/createOrUpdate</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="e7b953f6-c6e6-431a-8435-5aedc5333915" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtei.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint></con:endpoints><con:resource name="Get Experience Content" path="/dtei/api/v1/experience/content/2c92808558518bfc0158518c36400002" id="7a849717-d976-44d4-acc9-8fa4b95529cd"><con:settings/><con:parameters/><con:method name="Get Experience Content" id="c600e3f4-037b-4ccb-9bd6-0f80b64b2028" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:c92="http://qa.dtei.dotrips.com/dtei/api/v1/experience/content/2c92808558518bfc0158518c36400002">c92:Response</con:element></con:representation><con:request name="Get Experience Content" id="90a447ac-592a-4473-aeca-b337fa1d1847" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="Accept-Language" value="en"/>
   &lt;con:entry key="applicationType" value="web"/>
-&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/content/2c92808558518bfc0158518c36400002</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="bb3758de-ba3d-4779-9809-38c770446c08" name="DTEI Experience"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="70cea5d8-678a-495c-956c-8b4bffee19e5" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="checkIfExperienceIsApproved" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="checkIfExperienceIsApproved - checkIfExperienceIsApproved" id="8f221055-482e-4314-9dfa-92b8c17d2729"><con:settings/><con:config service="http://qa.dtei.dotrips.com" resourcePath="/dtei/api/v1/experience/approved/2c92808558518bfc0158518c36400002" methodName="checkIfExperienceIsApproved" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="checkIfExperienceIsApproved - checkIfExperienceIsApproved" id="a5d4bea7-69c5-416e-b7a9-c95e467d2158" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/content/2c92808558518bfc0158518c36400002</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="a3732f68-27db-4aa8-800f-85d13e78e24a" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtei.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint></con:endpoints><con:resource name="Get Contract Document" path="/dtei/api/v1/experience/contractDocument/2c92808558518bfc0158518c36400002" id="7e943d1b-90fe-4cdc-876b-d1fd88729819"><con:settings/><con:parameters/><con:method name="Get Contract Document" id="f98cdb01-d9da-4173-a3a4-8bdbcd012309" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:c92="http://qa.dtei.dotrips.com/dtei/api/v1/experience/contractDocument/2c92808558518bfc0158518c36400002">c92:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:c92="http://qa.dtei.dotrips.com/dtei/api/v1/experience/contractDocument/2c92808558518bfc0158518c36400002">c92:Fault</con:element></con:representation><con:request name="Get Contract Document" id="8b2d09d3-97c9-493a-a591-e4663ef656ca" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request>{
+  "id": 0,
+  "experienceExtranetID": "string",
+  "title": "string",
+  "comment": "string",
+  "contractDocument": {
+    "originalFilename": "string",
+    "contentType": "string",
+    "name": "string",
+    "empty": false,
+    "bytes": [
+      "string"
+    ],
+    "size": 0,
+    "inputStream": {}
+  },
+  "filename": "string",
+  "uniqueKey": "string",
+  "createdBy": "string",
+  "createdDate": "2016-11-15T06:54:00.984Z",
+  "errors": {
+    "nestedPath": "string",
+    "allErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalErrorCount": 0,
+    "globalErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "code": "string"
+    },
+    "fieldErrorCount": 0,
+    "fieldErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      }
+    ],
+    "fieldError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "field": "string",
+      "rejectedValue": {},
+      "bindingFailure": false,
+      "code": "string"
+    },
+    "objectName": "string",
+    "errorCount": 0
+  }
+}</con:request><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/contractDocument/2c92808558518bfc0158518c36400002</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="bb3758de-ba3d-4779-9809-38c770446c08" name="DTEI Experience"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="70cea5d8-678a-495c-956c-8b4bffee19e5" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="checkIfExperienceIsApproved" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="checkIfExperienceIsApproved - checkIfExperienceIsApproved" id="8f221055-482e-4314-9dfa-92b8c17d2729"><con:settings/><con:config service="http://qa.dtei.dotrips.com" resourcePath="/dtei/api/v1/experience/approved/2c92808558518bfc0158518c36400002" methodName="checkIfExperienceIsApproved" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="checkIfExperienceIsApproved - checkIfExperienceIsApproved" id="a5d4bea7-69c5-416e-b7a9-c95e467d2158" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="Accept-Language" value="en"/>
   &lt;con:entry key="applicationType" value="web"/>
 &lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/approved/2c92808558518bfc0158518c36400002</con:originalUri><con:assertion type="Simple Contains" id="f8b85be3-251b-4f05-ab1d-dd357265587f" name="Contains"><con:configuration><token>Experience ID not approved.</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="b312d053-b011-4739-8b92-a552802b4cb3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetVariationAvailibilityList" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Get Variation Availability List - Get Variation Availability List" id="23698fd1-5182-4211-9903-d68e11f24fed"><con:settings/><con:config service="http://qa.dtei.dotrips.com" resourcePath="/dtei/api/v1/experience/availability/variation/2c92808558518bfc0158518c36400002" methodName="Get Variation Availability List" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get Variation Availability List - Get Variation Availability List" id="5c4353cf-93a9-47a7-bca0-a71fdcc73d0f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
@@ -8914,4 +9011,101 @@ assert json.data.title=="abc"
 
 log.info json.data.extranetID
 
-assert json.data.extranetID.equals("2c92808558518bfc0158518c36400002")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
+assert json.data.extranetID.equals("2c92808558518bfc0158518c36400002")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="9fbe38d7-ae91-4adb-bd12-f3de809d2c73" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get Contract Document" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Get Contract Document - Get Contract Document" id="4b98d529-fed3-444c-8d78-2a9cbf8e7300"><con:settings/><con:config service="http://qa.dtei.dotrips.com" resourcePath="/dtei/api/v1/experience/contractDocument/2c92808558518bfc0158518c36400002" methodName="Get Contract Document" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get Contract Document - Get Contract Document" id="8b2d09d3-97c9-493a-a591-e4663ef656ca" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request>{
+  "id": 0,
+  "experienceExtranetID": "string",
+  "title": "string",
+  "comment": "string",
+  "contractDocument": {
+    "originalFilename": "string",
+    "contentType": "string",
+    "name": "string",
+    "empty": false,
+    "bytes": [
+      "string"
+    ],
+    "size": 0,
+    "inputStream": {}
+  },
+  "filename": "string",
+  "uniqueKey": "string",
+  "createdBy": "string",
+  "createdDate": "2016-11-15T06:54:00.984Z",
+  "errors": {
+    "nestedPath": "string",
+    "allErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalErrorCount": 0,
+    "globalErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "code": "string"
+    },
+    "fieldErrorCount": 0,
+    "fieldErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      }
+    ],
+    "fieldError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "field": "string",
+      "rejectedValue": {},
+      "bindingFailure": false,
+      "code": "string"
+    },
+    "objectName": "string",
+    "errorCount": 0
+  }
+}</con:request><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/contractDocument/2c92808558518bfc0158518c36400002</con:originalUri><con:assertion type="Simple NotContains" id="1879e6e3-9d62-48e3-8d32-71b06b852379" name="Not Contains"><con:configuration><token>null</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
