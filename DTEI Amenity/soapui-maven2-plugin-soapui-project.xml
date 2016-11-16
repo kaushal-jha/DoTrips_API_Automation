@@ -2,7 +2,49 @@
 <con:soapui-project id="a26d18e7-a2bc-4847-b7ae-2376d7c18915" activeEnvironment="Default" name="DTEI Amenity" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="c636f2d3-25ae-4583-8703-b500b1395ab1" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtei.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint></con:endpoints><con:resource name="List Amenity for auto complete widget" path="/dtei/api/v1/experience/amenity/autoComplete" id="cedf50ae-3315-48d6-a827-87da690312af"><con:settings/><con:parameters/><con:method name="List Amenity for auto complete widget" id="76b143c9-b04d-47ba-834b-7553026b4172" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="List Amenity for auto complete widget" id="8933c0cf-9b62-488b-b4c1-2e508727b0ce" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="Accept-Language" value="en"/>
   &lt;con:entry key="applicationType" value="web"/>
-&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/amenity/autoComplete</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="2d8e1829-7ba7-4ca4-bee8-7c867f10dbc7" name="DTEI Amenity"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="c09bfb97-80c9-4c9e-ab21-d01b41e44384" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="List Amenity for auto complete widget" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="List Amenity for auto complete widget - List Amenity for auto complete widget" id="dd640a4f-0bb3-42dc-b14e-aeed232aa5e2"><con:settings/><con:config service="http://qa.dtei.dotrips.com" resourcePath="/dtei/api/v1/experience/amenity/autoComplete" methodName="List Amenity for auto complete widget" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="List Amenity for auto complete widget - List Amenity for auto complete widget" id="8933c0cf-9b62-488b-b4c1-2e508727b0ce" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/amenity/autoComplete</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="2d91ac44-4bef-487a-ab2c-e53eb953cabd" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtei.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint></con:endpoints><con:resource name="fetchAmenityList" path="/dtei/api/v1/experience/amenity/search" id="59783ee4-e982-4b66-9725-3876d0e6fe59"><con:settings/><con:parameters/><con:method name="fetchAmenityList" id="756e7589-c5d3-4251-a28f-0e672887ec26" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:sear="http://qa.dtei.dotrips.com/dtei/api/v1/experience/amenity/search">sear:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="fetchAmenityList" id="986cc6be-1687-4bd3-b0c8-6674b0f59412" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request>{
+  "sortColumn": "string",
+  "order": "string",
+  "max": 0,
+  "offset": 0,
+  "pageIndex": 0,
+  "importCsvMode": false,
+  "id": 16,
+  "isPaginate": false,
+  "isFilter": false,
+  "amenityName": "string",
+  "externalReferenceCode": "string",
+  "displayName": {
+    "languageMappings": {}
+  },
+  "currentUserId": "string",
+  "currentUserName": "string",
+  "lastUpdatedDateFrom": "2016-11-16T04:58:17.406Z",
+  "lastUpdatedDateTo": "2016-11-16T04:58:17.406Z",
+  "createdDateFrom": "2016-11-16T04:58:17.406Z",
+  "createdDateTo": "2016-11-16T04:58:17.406Z",
+  "lastUpdatedDate": "2016-11-16T04:58:17.406Z",
+  "createdDate": "2016-11-16T04:58:17.406Z",
+  "isDeleted": false,
+  "lastUpdatedBy": "string",
+  "createdBy": "string",
+  "amenityLogoImage": {
+    "originalFilename": "string",
+    "contentType": "string",
+    "name": "string",
+    "empty": false,
+    "bytes": [
+      "string"
+    ],
+    "size": 0,
+    "inputStream": {}
+  },
+  "amenityLogoUrl": "string",
+  "amenityLevel": "HOTEL"
+}</con:request><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/amenity/search</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="2d8e1829-7ba7-4ca4-bee8-7c867f10dbc7" name="DTEI Amenity"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="c09bfb97-80c9-4c9e-ab21-d01b41e44384" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="List Amenity for auto complete widget" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="List Amenity for auto complete widget - List Amenity for auto complete widget" id="dd640a4f-0bb3-42dc-b14e-aeed232aa5e2"><con:settings/><con:config service="http://qa.dtei.dotrips.com" resourcePath="/dtei/api/v1/experience/amenity/autoComplete" methodName="List Amenity for auto complete widget" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="List Amenity for auto complete widget - List Amenity for auto complete widget" id="8933c0cf-9b62-488b-b4c1-2e508727b0ce" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="Accept-Language" value="en"/>
   &lt;con:entry key="applicationType" value="web"/>
 &lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/amenity/autoComplete</con:originalUri><con:assertion type="GroovyScriptAssertion" id="b180d48f-4456-40f4-a38a-550a56b99ac7" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper 
@@ -13,4 +55,59 @@ def slurper = new JsonSlurper()
 def json = slurper.parseText responseContent
 
 assert json*.id?.contains(1)
-assert json*.amenityName?.contains("Test Amenity 0")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
+assert json*.amenityName?.contains("Test Amenity 0")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="63a441d4-9544-4307-9be8-3dfb5eda2e43" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="fetchAmenityList" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="fetchAmenityList - fetchAmenityList" id="79481677-7457-41cf-85a8-181c5a86eaa8"><con:settings/><con:config service="http://qa.dtei.dotrips.com" resourcePath="/dtei/api/v1/experience/amenity/search" methodName="fetchAmenityList" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="fetchAmenityList - fetchAmenityList" id="986cc6be-1687-4bd3-b0c8-6674b0f59412" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request>{
+  "sortColumn": "string",
+  "order": "string",
+  "max": 0,
+  "offset": 0,
+  "pageIndex": 0,
+  "importCsvMode": false,
+  "id": 16,
+  "isPaginate": false,
+  "isFilter": false,
+  "amenityName": "string",
+  "externalReferenceCode": "string",
+  "displayName": {
+    "languageMappings": {}
+  },
+  "currentUserId": "string",
+  "currentUserName": "string",
+  "lastUpdatedDateFrom": "2016-11-16T04:58:17.406Z",
+  "lastUpdatedDateTo": "2016-11-16T04:58:17.406Z",
+  "createdDateFrom": "2016-11-16T04:58:17.406Z",
+  "createdDateTo": "2016-11-16T04:58:17.406Z",
+  "lastUpdatedDate": "2016-11-16T04:58:17.406Z",
+  "createdDate": "2016-11-16T04:58:17.406Z",
+  "isDeleted": false,
+  "lastUpdatedBy": "string",
+  "createdBy": "string",
+  "amenityLogoImage": {
+    "originalFilename": "string",
+    "contentType": "string",
+    "name": "string",
+    "empty": false,
+    "bytes": [
+      "string"
+    ],
+    "size": 0,
+    "inputStream": {}
+  },
+  "amenityLogoUrl": "string",
+  "amenityLevel": "HOTEL"
+}</con:request><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/amenity/search</con:originalUri><con:assertion type="GroovyScriptAssertion" id="3d7f6316-13f2-423b-97e9-2c1e2ced350b" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper 
+
+def responseContent = messageExchange.getResponseContent() 
+
+def slurper = new JsonSlurper()
+def json = slurper.parseText responseContent
+
+log.info json.data.id
+assert json.data.id==16
+
+log.info json.data.createdBy
+assert json.data.createdBy=="aditi gupta"
+assert json.data.amenityName=="yqrzr"
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
