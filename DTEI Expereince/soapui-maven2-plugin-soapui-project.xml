@@ -4560,7 +4560,10 @@
 &lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/master/content/8</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Get Master Experience Images" id="b013f68e-f454-4a66-b665-f669ff4e379f" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="Accept-Language" value="en"/>
   &lt;con:entry key="applicationType" value="web"/>
-&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/master/content/8</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="90b46ec7-5bfc-4b54-86b9-2874079f9c6e" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtei.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint></con:endpoints><con:resource name="SavePreviewAndQualityCheck" path="/dtei/api/v1/experience/master/previewAndQualityCheck" id="35f2b5d4-b61b-414b-bf16-16030e142ad6"><con:settings/><con:parameters/><con:method name="SavePreviewAndQualityCheck" id="3d98fc19-3d93-44c1-83bd-dfec910e8587" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:prev="http://qa.dtei.dotrips.com/dtei/api/v1/experience/master/previewAndQualityCheck">prev:Response</con:element></con:representation><con:request name="SavePreviewAndQualityCheck" id="b81bd481-f7c8-413c-a265-70ca60bd20d5" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/master/content/8</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="GetMasterPreviewAndQualityCheckData" id="b013f68e-f454-4a66-b665-f669ff4e379f" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/master/content/8</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="90b46ec7-5bfc-4b54-86b9-2874079f9c6e" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtei.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint></con:endpoints><con:resource name="SavePreviewAndQualityCheck" path="/dtei/api/v1/experience/master/previewAndQualityCheck" id="35f2b5d4-b61b-414b-bf16-16030e142ad6"><con:settings/><con:parameters/><con:method name="SavePreviewAndQualityCheck" id="3d98fc19-3d93-44c1-83bd-dfec910e8587" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:prev="http://qa.dtei.dotrips.com/dtei/api/v1/experience/master/previewAndQualityCheck">prev:Response</con:element></con:representation><con:request name="SavePreviewAndQualityCheck" id="b81bd481-f7c8-413c-a265-70ca60bd20d5" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="Accept-Language" value="en"/>
   &lt;con:entry key="applicationType" value="web"/>
 &lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request>{
@@ -9374,4 +9377,117 @@ def json = slurper.parseText responseContent
 
 log.info json.data.childImages.id
 
-assert json.data.childImages.id.get(0).equals("2c92808558518bfc0158518c35e90000")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
+assert json.data.childImages.id.get(0).equals("2c92808558518bfc0158518c35e90000")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="6c33bab4-c141-4f95-9078-cc67f5c6b7ab" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="SavePreviewAndQualityCheck" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="SavePreviewAndQualityCheck - SavePreviewAndQualityCheck" id="07875d95-29c7-448a-a7a4-c550277ab820"><con:settings/><con:config service="http://qa.dtei.dotrips.com" resourcePath="/dtei/api/v1/experience/master/previewAndQualityCheck" methodName="SavePreviewAndQualityCheck" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="SavePreviewAndQualityCheck - SavePreviewAndQualityCheck" id="b81bd481-f7c8-413c-a265-70ca60bd20d5" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request>{
+  "experienceId": "string",
+  "masterExperienceId": 8,
+  "updateTime": "string",
+  "updateTimeDate": "2016-11-16T04:58:16.864Z",
+  "comment": "string",
+  "updatedBy": "string",
+  "approved": false,
+  "uiVisible": false,
+  "commentHistoryList": [
+    {}
+  ],
+  "errors": {
+    "globalErrorCount": 0,
+    "nestedPath": "string",
+    "allErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "code": "string"
+    },
+    "fieldErrorCount": 0,
+    "fieldErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      }
+    ],
+    "fieldError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "field": "string",
+      "rejectedValue": {},
+      "bindingFailure": false,
+      "code": "string"
+    },
+    "objectName": "string",
+    "errorCount": 0
+  }
+}</con:request><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/master/previewAndQualityCheck</con:originalUri><con:assertion type="Simple Contains" id="6eadf0ad-376e-4fd1-9ec6-fb434b7bb296" name="Contains"><con:configuration><token>Experience status updated successfully.</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="ce4a8ab4-a617-4026-8402-b20f5bbeac56" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper 
+
+def responseContent = messageExchange.getResponseContent() 
+
+def slurper = new JsonSlurper()
+def json = slurper.parseText responseContent
+
+log.info json.data.commentHistoryList.masterExperienceId.get(0)
+assert json.data.commentHistoryList.masterExperienceId.get(0)==8</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="f1272108-129f-4bbd-881a-2f4ca53c8217" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetMasterPreviewAndQualityCheckData" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="get experience master content - GetMasterPreviewAndQualityCheckData" id="7b158d59-0b65-4742-921a-06f70f03b4ec"><con:settings/><con:config service="http://qa.dtei.dotrips.com" resourcePath="/dtei/api/v1/experience/master/images/1" methodName="get experience master content" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="get experience master content - GetMasterPreviewAndQualityCheckData" id="b013f68e-f454-4a66-b665-f669ff4e379f" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/master/content/8</con:originalUri><con:assertion type="GroovyScriptAssertion" id="57fa4293-2454-4d3c-be3a-49fbecef3cb9" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper 
+
+def responseContent = messageExchange.getResponseContent() 
+
+log.info responseContent
+
+def slurper = new JsonSlurper()
+def json = slurper.parseText responseContent
+
+log.info json.status
+
+assert json.status.equals(true)
+
+assert json.data.childImages.id.get(0)=="2c92808558518bfc0158518c35e90000"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
