@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="618442bb-32e8-4f38-a810-93eb5a4a33c3" activeEnvironment="Default" name="DTHI Amenity" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="6817d8e5-c021-4349-87f3-756a5362eacf" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dthi.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://qa.dthi.dotrips.com</con:endpoint></con:endpoints><con:resource name="SaveOrUpdateAmenity" path="/dthi/api/v1/hotel/amenity" id="a8ae4ec9-eb08-44c2-9891-9c5d0c73236f"><con:settings/><con:parameters/><con:method name="SaveOrUpdateAmenity" id="2ddcd879-ce02-4428-a70c-0eaace6c8819" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:amen="http://qa.dthi.dotrips.com/dthi/api/v1/hotel/amenity">amen:Response</con:element></con:representation><con:request name="SaveOrUpdateAmenity" id="9f2a2a7d-08bc-4212-89b9-2f371e883afe" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dthi.dotrips.com</con:endpoint><con:request>{
+  "sortColumn": "string",
+  "order": "string",
+  "max": 0,
+  "offset": 0,
+  "pageIndex": 0,
+  "importCsvMode": false,
+  "id": 1,
+  "isPaginate": false,
+  "isFilter": false,
+  "amenityName": "string",
+  "externalReferenceCode": "string",
+  "displayName": {
+    "english": "string",
+    "arabic": "string"
+  },
+  "currentUserId": "string",
+  "currentUserName": "string",
+  "lastUpdatedDateFrom": "2016-11-18T09:01:46.114Z",
+  "lastUpdatedDateTo": "2016-11-18T09:01:46.114Z",
+  "createdDateFrom": "2016-11-18T09:01:46.114Z",
+  "createdDateTo": "2016-11-18T09:01:46.114Z",
+  "lastUpdatedDate": "2016-11-18T09:01:46.114Z",
+  "createdDate": "2016-11-18T09:01:46.114Z",
+  "isDeleted": false,
+  "lastUpdatedBy": "string",
+  "createdBy": "string",
+  "amenityLogoImage": {
+    "originalFilename": "string",
+    "contentType": "string",
+    "name": "string",
+    "empty": false,
+    "bytes": [
+      "string"
+    ],
+    "size": 0,
+    "inputStream": {}
+  },
+  "amenityLogoUrl": "string",
+  "amenityLevel": "HOTEL"
+}</con:request><con:originalUri>http://qa.dthi.dotrips.com/dthi/api/v1/hotel/amenity</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="3aada020-b9ee-4f22-b9e7-03018ce962c0" name="DTHI Amenity"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="4f33a3bf-3b07-4995-8571-8e2dbea9debf" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="saveOrUpdateAmenity" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="SaveOrUpdateAmenity - SaveOrUpdateAmenity" id="694c56f2-29b1-451f-be33-3bb0f3877248"><con:settings/><con:config service="http://qa.dthi.dotrips.com" resourcePath="/dthi/api/v1/hotel/amenity" methodName="SaveOrUpdateAmenity" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="SaveOrUpdateAmenity - SaveOrUpdateAmenity" id="9f2a2a7d-08bc-4212-89b9-2f371e883afe" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dthi.dotrips.com</con:endpoint><con:request>{
+  "sortColumn": "string",
+  "order": "string",
+  "max": 0,
+  "offset": 0,
+  "pageIndex": 0,
+  "importCsvMode": false,
+  "id": 1,
+  "isPaginate": false,
+  "isFilter": false,
+  "amenityName": "string",
+  "externalReferenceCode": "string",
+  "displayName": {
+    "english": "string",
+    "arabic": "string"
+  },
+  "currentUserId": "string",
+  "currentUserName": "string",
+  "lastUpdatedDateFrom": "2016-11-18T09:01:46.114Z",
+  "lastUpdatedDateTo": "2016-11-18T09:01:46.114Z",
+  "createdDateFrom": "2016-11-18T09:01:46.114Z",
+  "createdDateTo": "2016-11-18T09:01:46.114Z",
+  "lastUpdatedDate": "2016-11-18T09:01:46.114Z",
+  "createdDate": "2016-11-18T09:01:46.114Z",
+  "isDeleted": false,
+  "lastUpdatedBy": "string",
+  "createdBy": "string",
+  "amenityLogoImage": {
+    "originalFilename": "string",
+    "contentType": "string",
+    "name": "string",
+    "empty": false,
+    "bytes": [
+      "string"
+    ],
+    "size": 0,
+    "inputStream": {}
+  },
+  "amenityLogoUrl": "string",
+  "amenityLevel": "HOTEL"
+}</con:request><con:originalUri>http://qa.dthi.dotrips.com/dthi/api/v1/hotel/amenity</con:originalUri><con:assertion type="GroovyScriptAssertion" id="a257cfe9-d735-4a31-b384-44b6b930ab27" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper 
+
+def responseContent = messageExchange.getResponseContent() 
+
+def slurper = new JsonSlurper()
+def json = slurper.parseText responseContent
+
+assert json.data!=null
+assert json.message!=null
+assert json.status==true
+
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
