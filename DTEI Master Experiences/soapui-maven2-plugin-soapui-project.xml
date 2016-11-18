@@ -1724,7 +1724,98 @@
     "objectName": "string",
     "errorCount": 0
   }
-}</con:request><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/master/toggle</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="5f7dea55-f8ba-4711-81b6-78d7d817eeef" name="DTEI Master Experiences"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="5bdad286-9f86-4411-8240-4c097edb8f4e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="saveOrUpdateMasterExperienceContact" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Save or update Master Experience Contact - Save or update Master Experience Contact" id="731d79ef-2b3c-422b-9733-0d213a370cee"><con:settings/><con:config service="http://qa.dtei.dotrips.com" resourcePath="/dtei/api/v1/experience/master/contactInformation" methodName="Save or update Master Experience Contact" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Save or update Master Experience Contact - Save or update Master Experience Contact" id="e6e3876e-88f1-42d6-b9bc-bae52bb08322" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+}</con:request><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/master/toggle</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="8b9bcc61-0345-4d0c-bb76-1a7746e41e07" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtei.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint></con:endpoints><con:resource name="GetMasterExperienceUpdateNote" path="/dtei/api/v1/experience/master/updateNotes" id="43f34845-1f24-4f53-97e1-c2f9e21ec6f0"><con:settings/><con:parameters/><con:method name="GetMasterExperienceUpdateNote" id="55f334fe-f8a1-4d6f-9a03-ec71733f33d9" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:upd="http://qa.dtei.dotrips.com/dtei/api/v1/experience/master/updateNotes">upd:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="GetMasterExperienceUpdateNote" id="44a835f7-6fc5-464f-b6c2-c4036d2ce14b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request>{
+  "sortColumn": "string",
+  "order": "string",
+  "max": 0,
+  "offset": 0,
+  "pageIndex": 0,
+  "importCsvMode": false,
+  "updateTime": "2016-11-18T05:31:56.006Z",
+  "comment": "string",
+  "updatedBy": "string",
+  "moduleName": "string",
+  "formattedUploadedDate": "string",
+  "masterExperienceId": 1,
+  "isPaginate": false,
+  "errors": {
+    "globalErrorCount": 0,
+    "nestedPath": "string",
+    "allErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "code": "string"
+    },
+    "fieldErrorCount": 0,
+    "fieldErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      }
+    ],
+    "fieldError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "field": "string",
+      "rejectedValue": {},
+      "bindingFailure": false,
+      "code": "string"
+    },
+    "objectName": "string",
+    "errorCount": 0
+  }
+}</con:request><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/master/updateNotes</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="5f7dea55-f8ba-4711-81b6-78d7d817eeef" name="DTEI Master Experiences"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="5bdad286-9f86-4411-8240-4c097edb8f4e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="saveOrUpdateMasterExperienceContact" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Save or update Master Experience Contact - Save or update Master Experience Contact" id="731d79ef-2b3c-422b-9733-0d213a370cee"><con:settings/><con:config service="http://qa.dtei.dotrips.com" resourcePath="/dtei/api/v1/experience/master/contactInformation" methodName="Save or update Master Experience Contact" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Save or update Master Experience Contact - Save or update Master Experience Contact" id="e6e3876e-88f1-42d6-b9bc-bae52bb08322" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="Accept-Language" value="en"/>
   &lt;con:entry key="applicationType" value="web"/>
 &lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request>{
@@ -3582,6 +3673,114 @@ def slurper = new JsonSlurper()
 def json = slurper.parseText responseContent
 
 //assert json.data!=null
+assert json.message!=null
+assert json.status==true
+
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="1eca1ea5-9ca2-43ca-ab39-6d0ef42fd8f6" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetMasterExperienceUpdateNote" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GetMasterExperienceUpdateNote - GetMasterExperienceUpdateNote" id="dacdeb8b-69bf-48e9-9efe-1a7f4741681d"><con:settings/><con:config service="http://qa.dtei.dotrips.com" resourcePath="/dtei/api/v1/experience/master/updateNotes" methodName="GetMasterExperienceUpdateNote" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetMasterExperienceUpdateNote - GetMasterExperienceUpdateNote" id="44a835f7-6fc5-464f-b6c2-c4036d2ce14b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request>{
+  "sortColumn": "string",
+  "order": "string",
+  "max": 0,
+  "offset": 0,
+  "pageIndex": 0,
+  "importCsvMode": false,
+  "updateTime": "2016-11-18T05:31:56.006Z",
+  "comment": "string",
+  "updatedBy": "string",
+  "moduleName": "string",
+  "formattedUploadedDate": "string",
+  "masterExperienceId": 1,
+  "isPaginate": false,
+  "errors": {
+    "globalErrorCount": 0,
+    "nestedPath": "string",
+    "allErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "code": "string"
+    },
+    "fieldErrorCount": 0,
+    "fieldErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      }
+    ],
+    "fieldError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "field": "string",
+      "rejectedValue": {},
+      "bindingFailure": false,
+      "code": "string"
+    },
+    "objectName": "string",
+    "errorCount": 0
+  }
+}</con:request><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/master/updateNotes</con:originalUri><con:assertion type="GroovyScriptAssertion" id="c7e0638c-f533-4821-b6ff-4c6f1e1826f7" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper 
+
+def responseContent = messageExchange.getResponseContent() 
+
+def slurper = new JsonSlurper()
+def json = slurper.parseText responseContent
+
+log.info json.data.comment
+assert json.data.comment?.contains("masterExp")
+log.info json.data.masterExperienceId 
+assert json.data.masterExperienceId?.contains(1)
+assert json.data.moduleName?.contains("Link to Master")
+assert json.data.isPaginate?.contains(true)
+assert json.data!=null
 assert json.message!=null
 assert json.status==true
 
