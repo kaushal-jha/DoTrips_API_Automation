@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="b162fe12-3ff6-48e6-a304-08b168d04df9" activeEnvironment="Default" name="DTEI Category" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="3f445a63-ade6-41b3-b624-437e83f40a30" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtei.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint></con:endpoints><con:resource name="List Categories for auto complete widget" path="/dtei/api/v1/experience/category/12" id="20a91c1b-d75a-4c26-aaa8-b042b71310fc"><con:settings/><con:parameters/><con:method name="List Categories for auto complete widget" id="78e0ebd9-4713-4e84-be0f-3cb96ee77b64" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="List Categories for auto complete widget" id="738ee59e-9549-45af-a326-ad148db80af6" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/category/autoComplete</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="getCategory" id="738ee59e-9549-45af-a326-ad148db80af6" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/category/autoComplete</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="0c6e1ed9-d483-44f7-9d61-cd9486776498" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtei.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint></con:endpoints><con:resource name="Fetch Category List" path="/dtei/api/v1/experience/category/search" id="875aa2fc-82d6-41a5-9267-ce8c15f24d6d"><con:settings/><con:parameters/><con:method name="Fetch Category List" id="477fd9b4-e794-47b3-b013-a01495474717" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:sear="http://qa.dtei.dotrips.com/dtei/api/v1/experience/category/search">sear:Response</con:element></con:representation><con:request name="Fetch Category List" id="42d72b37-f81e-4c36-b167-9cce82b6aec7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request>{
+  "sortColumn": "string",
+  "order": "string",
+  "max": 0,
+  "offset": 0,
+  "pageIndex": 0,
+  "importCsvMode": false,
+  "id": 12,
+  "isPaginate": false,
+  "isFilter": false,
+  "categoryName": "string",
+  "displayName": {
+    "languageMappings": {}
+  },
+  "displayDescription": {
+    "languageMappings": {}
+  },
+  "externalReferenceCode": "string",
+  "currentUserId": "string",
+  "currentUserName": "string",
+  "lastUpdatedDateFrom": "2016-11-16T10:55:04.027Z",
+  "lastUpdatedDateTo": "2016-11-16T10:55:04.027Z",
+  "createdDateFrom": "2016-11-16T10:55:04.027Z",
+  "createdDateTo": "2016-11-16T10:55:04.027Z",
+  "lastUpdatedDate": "2016-11-16T10:55:04.027Z",
+  "createdDate": "2016-11-16T10:55:04.027Z",
+  "isDeleted": false,
+  "isEnabled": false,
+  "lastUpdatedBy": "string",
+  "createdBy": "string",
+  "categoryLogoImage": {
+    "originalFilename": "string",
+    "contentType": "string",
+    "name": "string",
+    "empty": false,
+    "bytes": [
+      "string"
+    ],
+    "size": 0,
+    "inputStream": {}
+  },
+  "categoryLogoUrl": "string",
+  "categoryImage": {},
+  "categoryImageUrl": {
+    "languageMappings": {}
+  }
+}</con:request><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/category/search</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="7ef026ec-c976-4913-8b96-0491fee5b78f" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dtei.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint></con:endpoints><con:resource name="ToggleCategory" path="/dtei/api/v1/experience/toggleCategory" id="7e9319ae-b107-4818-8eb4-adad5196a788"><con:settings/><con:parameters/><con:method name="ToggleCategory" id="270e0794-6deb-42f4-92a1-57b1d42b588b" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:tog="http://qa.dtei.dotrips.com/dtei/api/v1/experience/toggleCategory">tog:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:tog="http://qa.dtei.dotrips.com/dtei/api/v1/experience/toggleCategory">tog:Response</con:element></con:representation><con:request name="ToggleCategory" id="6c5bba80-c569-4545-89f3-ad12f37bfdc0" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request>{
+  "sortColumn": "string",
+  "order": "string",
+  "max": 0,
+  "offset": 0,
+  "pageIndex": 0,
+  "importCsvMode": false,
+  "id": 12,
+  "isPaginate": false,
+  "isFilter": false,
+  "categoryName": "string",
+  "displayName": {
+    "languageMappings": {}
+  },
+  "displayDescription": {
+    "languageMappings": {}
+  },
+  "externalReferenceCode": "string",
+  "currentUserId": "string",
+  "currentUserName": "string",
+  "lastUpdatedDateFrom": "2016-11-16T10:55:04.046Z",
+  "lastUpdatedDateTo": "2016-11-16T10:55:04.046Z",
+  "createdDateFrom": "2016-11-16T10:55:04.046Z",
+  "createdDateTo": "2016-11-16T10:55:04.046Z",
+  "lastUpdatedDate": "2016-11-16T10:55:04.046Z",
+  "createdDate": "2016-11-16T10:55:04.046Z",
+  "isDeleted": false,
+  "isEnabled": false,
+  "lastUpdatedBy": "string",
+  "createdBy": "string",
+  "categoryLogoImage": {
+    "originalFilename": "string",
+    "contentType": "string",
+    "name": "string",
+    "empty": false,
+    "bytes": [
+      "string"
+    ],
+    "size": 0,
+    "inputStream": {}
+  },
+  "categoryLogoUrl": "string",
+  "categoryImage": {},
+  "categoryImageUrl": {
+    "languageMappings": {}
+  }
+}</con:request><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/toggleCategory</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="fd5b2463-9271-429f-8d2e-a028f34b586d" name="DTEI Category"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="57c55156-ab93-4f5e-90fc-c55c0e25629d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="List Categories for auto complete widget" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="List Categories for auto complete widget - List Categories for auto complete widget" id="6443bbda-2306-434e-a40b-d24c7c122137"><con:settings/><con:config service="http://qa.dtei.dotrips.com" resourcePath="/dtei/api/v1/experience/category/12" methodName="List Categories for auto complete widget" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="List Categories for auto complete widget - List Categories for auto complete widget" id="738ee59e-9549-45af-a326-ad148db80af6" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/category/autoComplete</con:originalUri><con:assertion type="GroovyScriptAssertion" id="94724f94-d724-48c9-a69f-80768c5ac6a4" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper 
+
+def responseContent = messageExchange.getResponseContent() 
+
+def slurper = new JsonSlurper()
+def json = slurper.parseText responseContent
+
+assert json*.id?.contains(1)
+assert json*.categoryName?.contains("Test Category 0")
+assert json*.displayName?.contains("Display Name English 0")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="677ef862-7e84-4cd3-8277-4e343b48a0b8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Fetch Category List" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Fetch Category List - Fetch Category List" id="789918c6-d41d-4e3a-9e1f-e0028154f056"><con:settings/><con:config service="http://qa.dtei.dotrips.com" resourcePath="/dtei/api/v1/experience/category/search" methodName="Fetch Category List" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Fetch Category List - Fetch Category List" id="42d72b37-f81e-4c36-b167-9cce82b6aec7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request>{
+  "sortColumn": "string",
+  "order": "string",
+  "max": 0,
+  "offset": 0,
+  "pageIndex": 0,
+  "importCsvMode": false,
+  "id": 12,
+  "isPaginate": false,
+  "isFilter": false,
+  "categoryName": "string",
+  "displayName": {
+    "languageMappings": {}
+  },
+  "displayDescription": {
+    "languageMappings": {}
+  },
+  "externalReferenceCode": "string",
+  "currentUserId": "string",
+  "currentUserName": "string",
+  "lastUpdatedDateFrom": "2016-11-16T10:55:04.027Z",
+  "lastUpdatedDateTo": "2016-11-16T10:55:04.027Z",
+  "createdDateFrom": "2016-11-16T10:55:04.027Z",
+  "createdDateTo": "2016-11-16T10:55:04.027Z",
+  "lastUpdatedDate": "2016-11-16T10:55:04.027Z",
+  "createdDate": "2016-11-16T10:55:04.027Z",
+  "isDeleted": false,
+  "isEnabled": false,
+  "lastUpdatedBy": "string",
+  "createdBy": "string",
+  "categoryLogoImage": {
+    "originalFilename": "string",
+    "contentType": "string",
+    "name": "string",
+    "empty": false,
+    "bytes": [
+      "string"
+    ],
+    "size": 0,
+    "inputStream": {}
+  },
+  "categoryLogoUrl": "string",
+  "categoryImage": {},
+  "categoryImageUrl": {
+    "languageMappings": {}
+  }
+}</con:request><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/category/search</con:originalUri><con:assertion type="GroovyScriptAssertion" id="d98d6271-4dc2-4600-af72-d9fea2b32cab" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper 
+
+def responseContent = messageExchange.getResponseContent() 
+
+def slurper = new JsonSlurper()
+def json = slurper.parseText responseContent
+
+assert json.data.id==12
+log.info json.data.categoryImageUrl.id
+//assert json.data.categoryImageUrl.id==199)
+
+def idList= json.data.categoryImageUrl.id
+log.info idList.getClass()
+def a=idList.find{
+	it==199
+}
+
+log.info a
+
+assert a==199
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="5302fc2c-9f24-42f5-b63a-e879b4f595f6" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getCategory" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="List Categories for auto complete widget - getCategory" id="49d24115-eed0-433d-be1b-528736677da1"><con:settings/><con:config service="http://qa.dtei.dotrips.com" resourcePath="/dtei/api/v1/experience/category/12" methodName="List Categories for auto complete widget" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="List Categories for auto complete widget - getCategory" id="738ee59e-9549-45af-a326-ad148db80af6" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/category/autoComplete</con:originalUri><con:assertion type="GroovyScriptAssertion" id="830e51d6-7cf7-42b3-8491-d2139c7d08ab" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper 
+
+def responseContent = messageExchange.getResponseContent() 
+
+def slurper = new JsonSlurper()
+def json = slurper.parseText responseContent
+
+assert json.data.id==12
+def idList= json.data.categoryImageUrl.id
+log.info idList.getClass()
+def a=idList.find{
+	it==199
+}
+
+log.info a
+
+assert a==199
+
+log.info json.data.categoryImageUrl.languageMappings.ar
+assert json.data.categoryImageUrl.languageMappings.ar=="973335b5a2554aa9a43cbd7427066edc"
+
+assert json.data.categoryImageUrl.languageMappings.en=="77921bd89735479b9d8c100f4457187c"
+
+
+
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="a68c1c06-7c50-470c-97a6-9c6f30d64930" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ToggleCategory" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="ToggleCategory - ToggleCategory" id="5530d897-72ac-4eee-9a01-c003488551ca"><con:settings/><con:config service="http://qa.dtei.dotrips.com" resourcePath="/dtei/api/v1/experience/toggleCategory" methodName="ToggleCategory" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ToggleCategory - ToggleCategory" id="6c5bba80-c569-4545-89f3-ad12f37bfdc0" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dtei.dotrips.com</con:endpoint><con:request>{
+  "sortColumn": "string",
+  "order": "string",
+  "max": 0,
+  "offset": 0,
+  "pageIndex": 0,
+  "importCsvMode": false,
+  "id": 12,
+  "isPaginate": false,
+  "isFilter": false,
+  "categoryName": "string",
+  "displayName": {
+    "languageMappings": {}
+  },
+  "displayDescription": {
+    "languageMappings": {}
+  },
+  "externalReferenceCode": "string",
+  "currentUserId": "string",
+  "currentUserName": "string",
+  "lastUpdatedDateFrom": "2016-11-16T10:55:04.046Z",
+  "lastUpdatedDateTo": "2016-11-16T10:55:04.046Z",
+  "createdDateFrom": "2016-11-16T10:55:04.046Z",
+  "createdDateTo": "2016-11-16T10:55:04.046Z",
+  "lastUpdatedDate": "2016-11-16T10:55:04.046Z",
+  "createdDate": "2016-11-16T10:55:04.046Z",
+  "isDeleted": false,
+  "isEnabled": false,
+  "lastUpdatedBy": "string",
+  "createdBy": "string",
+  "categoryLogoImage": {
+    "originalFilename": "string",
+    "contentType": "string",
+    "name": "string",
+    "empty": false,
+    "bytes": [
+      "string"
+    ],
+    "size": 0,
+    "inputStream": {}
+  },
+  "categoryLogoUrl": "string",
+  "categoryImage": {},
+  "categoryImageUrl": {
+    "languageMappings": {}
+  }
+}</con:request><con:originalUri>http://qa.dtei.dotrips.com/dtei/api/v1/experience/toggleCategory</con:originalUri><con:assertion type="GroovyScriptAssertion" id="87070bae-08cf-4591-aab7-6250cbf2949f" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper 
+
+def responseContent = messageExchange.getResponseContent() 
+
+log.info responseContent
+
+def slurper = new JsonSlurper()
+def json = slurper.parseText responseContent
+
+assert json.status==true</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
