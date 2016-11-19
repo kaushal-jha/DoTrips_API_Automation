@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="0473bfb2-0146-498a-a1f6-2f83bd5552de" activeEnvironment="Default" name="DTHI MasterHotel" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="57fa4223-0786-48f7-850a-190c631454e6" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dthi.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://qa.dthi.dotrips.com</con:endpoint></con:endpoints><con:resource name="GetAuditDetails" path="/dthi/api/v1/getContactInformation" id="c111b159-a986-4969-85ae-b8a11c75b886"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value>1</con:value><con:style>QUERY</con:style><con:default>1</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="GetAuditDetails" id="2acb32c3-b5d4-442e-a519-12e4df0b8330" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:get="http://qa.dthi.dotrips.com/dthi/api/v1/getAuditDetails">get:Fault</con:element></con:representation><con:request name="getAuditDetails" id="3187e8c1-bd05-4666-b1bf-f8edb310262f" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dthi.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dthi.dotrips.com/dthi/api/v1/getAuditDetails</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="2075d282-8b82-42f8-96d4-9150f7c4fd54" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dthi.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://qa.dthi.dotrips.com</con:endpoint></con:endpoints><con:resource name="CreateHotelImages" path="/dthi/api/v1/masterHotel/createHotelImages" id="f8501676-ba45-46da-8c49-3aa9dfafea01"><con:settings/><con:parameters/><con:method name="CreateHotelImages" id="0f00bdee-0168-4df9-aef2-8328394ff7f2" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="createOrUpdateMasterHotelImages" id="3f7d0253-028b-4565-9c17-f61e440f6675" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dthi.dotrips.com</con:endpoint><con:request>{
+  "id": 50,
+  "enImages": [
+    {
+      "isDeleted": false,
+      "lastUpdatedDate": "2016-11-19T09:17:43.545Z",
+      "lastUpdatedBy": "string",
+      "createdDate": "2016-11-19T09:17:43.545Z",
+      "createdBy": "string",
+      "id": 0,
+      "serial": 0,
+      "isMainImage": false,
+      "file": {
+        "originalFilename": "string",
+        "contentType": "string",
+        "name": "string",
+        "empty": false,
+        "bytes": [
+          "string"
+        ],
+        "size": 0,
+        "inputStream": {}
+      },
+      "fileUrl": "string",
+      "enabled": false,
+      "isNewFile": false
+    }
+  ],
+  "arImages": [
+    {
+      "isDeleted": false,
+      "lastUpdatedDate": "2016-11-19T09:17:43.545Z",
+      "lastUpdatedBy": "string",
+      "createdDate": "2016-11-19T09:17:43.545Z",
+      "createdBy": "string",
+      "id": 0,
+      "serial": 0,
+      "isMainImage": false,
+      "file": {
+        "originalFilename": "string",
+        "contentType": "string",
+        "name": "string",
+        "empty": false,
+        "bytes": [
+          "string"
+        ],
+        "size": 0,
+        "inputStream": {}
+      },
+      "fileUrl": "string",
+      "enabled": false,
+      "isNewFile": false
+    }
+  ],
+  "comment": "string"
+}</con:request><con:originalUri>http://qa.dthi.dotrips.com/dthi/api/v1/masterHotel/createHotelImages</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="2f431a1a-efdd-4e57-84fc-0f44e25d6595" name="DTHI MasterHotel"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="5dfdec6f-a861-4159-8a33-c9cc2a485d19" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="createOrUpdateMasterHotelImages" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="CreateHotelImages - createOrUpdateMasterHotelImages" id="f831bb1f-85bc-4d71-994b-9d45000fa01d"><con:settings/><con:config service="http://qa.dthi.dotrips.com" resourcePath="/dthi/api/v1/masterHotel/createHotelImages" methodName="CreateHotelImages" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateHotelImages - createOrUpdateMasterHotelImages" id="3f7d0253-028b-4565-9c17-f61e440f6675" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://qa.dthi.dotrips.com</con:endpoint><con:request/><con:originalUri>http://qa.dthi.dotrips.com/dthi/api/v1/masterHotel/createHotelImages</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
