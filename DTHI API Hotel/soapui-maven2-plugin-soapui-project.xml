@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="5a15447a-764d-4986-afe8-b12d4125c6c4" activeEnvironment="Default" name="DTHI API Hotel" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="9a21926c-573f-4f25-880f-d01d9c01a4ce" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://qa.dthi.dotrips.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://qa.dthi.dotrips.com</con:endpoint></con:endpoints><con:resource name="CreateMaster" path="/dthi/api/v1/apiHotel/createMaster" id="70146f12-49c1-49cb-9430-00fa1d5fac58"><con:settings/><con:parameters/><con:method name="CreateMaster" id="61400750-5be5-4b26-b98d-810175684b6f" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:cre="http://qa.dthi.dotrips.com/dthi/api/v1/apiHotel/createMaster">cre:Response</con:element></con:representation><con:request name="createMaster" id="2ba6392a-4138-43e8-9ef7-0abb2af6a084" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dthi.dotrips.com</con:endpoint><con:request>{
+  "id": 7735,
+  "lastUpdatedBy": "string",
+  "lastUpdatedDate": "2016-11-19T06:06:11.712Z",
+  "hotelIds": [
+    0
+  ],
+  "enabled": false,
+  "updateNote": {
+    "updateTime": "2016-11-19T06:06:11.713Z",
+    "comment": "string",
+    "updatedBy": "string",
+    "moduleName": "string",
+    "formattedUploadedDate": "string"
+  },
+  "errors": {
+    "nestedPath": "string",
+    "allErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "code": "string"
+    },
+    "fieldErrorCount": 0,
+    "fieldErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      }
+    ],
+    "fieldError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "field": "string",
+      "rejectedValue": {},
+      "bindingFailure": false,
+      "code": "string"
+    },
+    "globalErrorCount": 0,
+    "objectName": "string",
+    "errorCount": 0
+  }
+}</con:request><con:originalUri>http://qa.dthi.dotrips.com/dthi/api/v1/apiHotel/createMaster</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="59699f5f-bef3-4475-a1ab-a5467e045564" name="DTHI API Hotel"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="2ee2e6ea-9934-4836-b199-414dd4142455" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="createMaster" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="CreateMaster - createMaster" id="f8e2b9cb-6fcb-4d43-82f1-2b43eb2fe1dd"><con:settings/><con:config service="http://qa.dthi.dotrips.com" resourcePath="/dthi/api/v1/apiHotel/createMaster" methodName="CreateMaster" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateMaster - createMaster" id="2ba6392a-4138-43e8-9ef7-0abb2af6a084" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept-Language" value="en"/>
+  &lt;con:entry key="applicationType" value="web"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://qa.dthi.dotrips.com</con:endpoint><con:request>{
+  "id": 7735,
+  "lastUpdatedBy": "string",
+  "lastUpdatedDate": "2016-11-19T06:06:11.712Z",
+  "hotelIds": [
+    0
+  ],
+  "enabled": false,
+  "updateNote": {
+    "updateTime": "2016-11-19T06:06:11.713Z",
+    "comment": "string",
+    "updatedBy": "string",
+    "moduleName": "string",
+    "formattedUploadedDate": "string"
+  },
+  "errors": {
+    "nestedPath": "string",
+    "allErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "code": "string"
+      }
+    ],
+    "globalError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "code": "string"
+    },
+    "fieldErrorCount": 0,
+    "fieldErrors": [
+      {
+        "codes": [
+          "string"
+        ],
+        "arguments": [
+          {}
+        ],
+        "defaultMessage": "string",
+        "objectName": "string",
+        "field": "string",
+        "rejectedValue": {},
+        "bindingFailure": false,
+        "code": "string"
+      }
+    ],
+    "fieldError": {
+      "codes": [
+        "string"
+      ],
+      "arguments": [
+        {}
+      ],
+      "defaultMessage": "string",
+      "objectName": "string",
+      "field": "string",
+      "rejectedValue": {},
+      "bindingFailure": false,
+      "code": "string"
+    },
+    "globalErrorCount": 0,
+    "objectName": "string",
+    "errorCount": 0
+  }
+}</con:request><con:originalUri>http://qa.dthi.dotrips.com/dthi/api/v1/apiHotel/createMaster</con:originalUri><con:assertion type="GroovyScriptAssertion" id="7e4fecea-8100-42d7-891c-745a57889f05" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper 
+
+def responseContent = messageExchange.getResponseContent() 
+
+def slurper = new JsonSlurper()
+def json = slurper.parseText responseContent
+
+//assert json.data!=null
+assert json.message!=null
+//assert json.status==true
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
